@@ -1,0 +1,457 @@
+@color-golden      : rgb(222, 181, 85);
+@color-trans-golden: rgba(222, 181, 85, .2);
+
+
+* {
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    overflow        : hidden;
+}
+#main-bg{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.back-r-1{
+    position: absolute;
+    top:0;
+    right:0;
+    width:200px;
+    height:200px;
+    & img{
+        width:100%;
+        height:auto;
+    }
+    transform:scaleX(-1);
+}
+
+.back-r-2{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:400px;
+    height:400px;
+    & img{
+        width:100%;
+        height:auto;
+    }
+    transform:scaleX(-1);
+}
+.back-l-1{
+    position: absolute;
+    left:0;
+    top:50%;
+    width: 600px;
+    height:600px;
+    transform: translateY(-50%);
+    & img{
+        width:100%;
+        height:auto;
+    }
+    
+}
+
+
+
+
+
+.row {
+    margin: 0 -5%;
+}
+
+.clearfix:after,.row:after {
+    display: table;
+    content: "";
+    clear  : both;
+}
+
+.sm-col-12 {
+    float  : left;
+    padding: 0 5%;
+    width  : 100%;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display:block;
+}
+
+
+.triangle {
+    position: absolute;
+    width        : 0px;
+    height:0px;
+    border-top   : 10px solid transparent;
+    border-right : 10px solid @color-trans-golden;
+    border-bottom: 10px solid @color-trans-golden;
+    border-left  : 10px solid transparent;
+}
+
+
+
+ 
+#bg-c-1 {
+    transform          : scale(20) rotate(-45deg);
+    top                : 50%;
+    left               : 50%;
+    transition-duration: 1s;
+    opacity            : 0;
+}
+
+#bg-c-2 {
+    transform          : scale(20) rotate(45deg);
+    top                : 50%;
+    left               : 50%;
+    transition-duration: 1s;
+    opacity            : 0;
+}
+
+
+
+//  中心
+#center-decor-square {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-20px, -20px);
+    z-index  : 900;
+}
+
+
+
+@keyframes shine1 {
+    25% {
+        border-right : 10px solid @color-golden;
+        border-bottom: 10px solid @color-golden;
+    }
+
+    60% {
+        border-right : 10px solid @color-trans-golden;
+        border-bottom: 10px solid @color-trans-golden;
+    }
+
+}
+
+@keyframes shine2 {
+    45% {
+        border-right : 10px solid @color-golden;
+        border-bottom: 10px solid @color-golden;
+    }
+
+    80% {
+        border-right : 10px solid @color-trans-golden;
+        border-bottom: 10px solid @color-trans-golden;
+    }
+}
+
+@keyframes shine3 {
+    60% {
+        border-right : 10px solid @color-golden;
+        border-bottom: 10px solid @color-golden;
+    }
+
+    100% {
+        border-right : 10px solid @color-trans-golden;
+        border-bottom: 10px solid @color-trans-golden;
+    }
+}
+
+@keyframes shine4 {
+    80% {
+        border-right : 10px solid @color-golden;
+        border-bottom: 10px solid @color-golden;
+    }
+
+    100% {
+        border-right : 10px solid @color-trans-golden;
+        border-bottom: 10px solid @color-trans-golden;
+    }
+}
+
+.square-left-top,
+.square-right-top,
+.square-right-bottom,
+.square-left-bottom {
+
+    transition: .5s;
+}
+
+.square-left-top {
+    animation-name           : shine1;
+    animation-duration       : 3s;
+    animation-iteration-count: infinite;
+}
+
+.square-right-top {
+    transform                : rotate(90deg);
+    left                     : 20px;
+    animation-name           : shine2;
+    animation-duration       : 3s;
+    animation-iteration-count: infinite;
+}
+
+.square-right-bottom {
+    transform                : rotate(180deg);
+    top                      : 20px;
+    left                     : 20px;
+    animation-name           : shine3;
+    animation-duration       : 3s;
+    animation-iteration-count: infinite;
+}
+
+.square-left-bottom {
+    transform                : rotate(270deg);
+    top                      : 20px;
+    animation-name           : shine4;
+    animation-duration       : 3s;
+    animation-iteration-count: infinite;
+}
+
+
+//四條
+
+#left-top,
+#right-top,
+#right-bottom,
+#left-bottom {
+    position        : absolute;
+    background-color: black;
+    z-index         : 888;
+    transition      : 1s;
+}
+
+#left-top,
+#right-bottom {
+    width        : 50%;
+    height       : 100px;
+    border-top   : 1px solid @color-golden;
+    border-bottom: 1px solid @color-golden;
+}
+
+#right-top,
+#left-bottom {
+    width       : 125px;
+    height      : 50%;
+    border-right: 1px solid @color-golden;
+    border-left : 1px solid @color-golden;
+}
+
+#left-top {
+    bottom: 50%;
+
+}
+
+#right-top {
+    left  : 50%;
+    bottom: 50%;
+
+}
+
+#right-bottom {
+    top  : 50%;
+    right: 0;
+}
+
+#left-bottom {
+    top  : 50%;
+    right: 50%;
+}
+
+
+#container:hover {
+    
+    #left-top,
+    #right-top,
+    #right-bottom,
+    #left-bottom {
+        opacity: 0;
+    }
+
+    #left-top {
+        transform: translateX(-1000px);
+       
+    }
+
+    #right-top {
+        transform: translateY(-1000px);
+    }
+
+    #right-bottom {
+        transform: translateX(1000px);
+    }
+
+    #left-bottom {
+        transform: translateY(1000px);
+    }
+
+    .square-left-top {
+        transform: rotate(180deg);
+    }
+
+    .square-right-top {
+        transform: rotate(-90deg);
+    }
+
+    .square-right-bottom {
+        transform: rotate(360deg);
+    }
+
+    .square-left-bottom {
+        transform: rotate(90deg);
+    }
+
+    .square-left-top,
+    .square-right-top,
+    .square-right-bottom,
+    .square-left-bottom {
+        opacity: 0;
+    }
+    #entry {
+        border-color: @color-golden;
+        opacity     : 1;
+
+    }
+
+    #bg-c-1,
+            #bg-c-2 {
+                transition-delay: .8s;
+                opacity         : 1;
+            }
+        
+            #bg-c-2 {
+                transition-delay: 1.8s;
+                opacity         : 1;
+            }
+
+    #d,
+    #o,
+    #r,
+    #i,
+    #s {
+        top    : 0;
+        opacity: 1;
+    }
+    
+}
+
+
+#entry {
+    position  : absolute;
+    margin    : 0 auto;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+    transition: 2s;
+    border    : 1px transparent solid;
+    opacity   : 0;
+}
+
+
+#title {
+    margin          : 49px 101px;
+    width           : 250px;
+    height          : 100px;
+    background-color: #fff;
+    text-align      : center;
+    line-height     : 100px;
+    font-size       : 50px;
+
+}
+
+a#title-btn{
+   padding:50px; 
+}
+
+#d,
+#o,
+#r,
+#i,
+#s {
+    position  : relative;
+    display   : inline;
+    top       : -10px;
+    transition: 1s;
+    opacity   : 0;
+}
+
+
+#o,
+#i {
+    position  : relative;
+    display   : inline;
+    top       : 20px;
+    transition: 1s;
+    opacity   : 0;
+}
+
+#pop-up {
+    position        : absolute;
+    top             : 0;
+    right           : 0;
+    left            : 0;
+    bottom          : 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index         : 999;
+
+    #content {
+        position        : absolute;
+        top             : 50%;
+        left            : 50%;
+        width           : 40%;
+        height          : 35%;
+        transform       : translate(-50%, -50%);
+        background-color: rgba(255, 255, 255);
+        border-radius   : 8px;
+
+        .row {
+            height: 100%;
+
+            &>div {
+
+                height     : 50%;
+
+                a {
+                    display       : block;
+                    padding:25px 0;
+                    text-align    : center;
+                    color         : @color-golden;
+                    text-transform: uppercase;
+                    font-family   : 'Six Caps', sans-serif;
+                    font-size     : 50px;
+                }
+            }
+            .border{
+                height:100%;
+                border-bottom: 1px @color-golden solid;
+            }
+        }
+    }
+
+}
+
+#bg-pop-up{
+    overflow: hidden;
+}
+
+#bg-box-1,#bg-box-2{
+    position: absolute;
+    top:0;
+    right:0;
+    width:40%;
+    height:100%;
+    background-color:rgba(255,0,0,.1);
+}
+
+#bg-box-2{
+    width:20%;
+    height:100%;
+    background-color:rgba(255,0,0,.1);
+}
