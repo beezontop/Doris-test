@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 #container {
-  min-width: 540px;
+  max-width: 767px;
   overflow: hidden;
 }
 #main-bg {
@@ -65,7 +65,8 @@ body {
   padding: 0 5%;
   width: 100%;
 }
-.d-none {
+.d-none,
+.sm-d-none {
   display: none;
 }
 .d-block {
