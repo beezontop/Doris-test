@@ -12,11 +12,61 @@ body {
     overflow        : hidden;
 }
 
+#new-container{
+    position: relative;
+    .back-r-1 {
+        position           : absolute;
+        top                : 0;
+        right               : 0;
+        max-width              : 100px;
+        max-height             : 100px;
+        // background-image: url(img\01.png);
+        // background-color: red;
+        & img {
+            width          : 100%;
+            height         : auto;
+        }
+        transform:scaleX(-1);
+    }
+    
+    .back-r-2 {
+        position: absolute;
+        right   : 0;
+        bottom  : 0;
+        max-width   :250px;
+        max-height  : 250px;
+    
+        & img {
+            width : 100%;
+            height: auto;
+        }
+    
+        transform:scaleX(-1);
+    }
+    
+    .back-l-1 {
+        position : absolute;
+        left     : 0;
+        top      : 50%;
+        max-width    : 200px;
+        max-height   : 200px;
+        transform: translateY(-50%);
+    
+        & img {
+            width : 100%;
+            height: auto;
+        }
+    
+    }
+}
+
+// ///////////////////////////////////////////////
+
 // sm手機 : ~767 md平板 : 768-1199 lg電腦 : 1200~
 
-#container{
+#container {
     max-width: 767px;
-    overflow: hidden;
+    overflow : hidden;
 }
 
 #main-bg {
@@ -25,23 +75,25 @@ body {
     height  : 100%;
 }
 
+
+
 .back-r-1 {
-    position: absolute;
-    top     : 0;
-    right   : 0;
-    max-width   : 200px;
-    max-height  : 200px;
-
-    & img {
-        width : 100%;
-        height: auto;
-    }
-
-    transform:scaleX(-1);
+    // position           : absolute;
+    // top                : 0;
+    // left               : 0;
+    // max-width              : 200px;
+    // max-height             : 200px;
+    // background-image: url(img\01.png);
+    // background-color: red;
+    /* & img {
+        width          : 100%;
+        height         : auto;
+    } */
+    // transform:scaleX(-1);
 }
 
 .back-r-2 {
-    position: absolute;
+    position: fixed;
     right   : 0;
     bottom  : 0;
     max-width   : 400px;
@@ -56,7 +108,7 @@ body {
 }
 
 .back-l-1 {
-    position : absolute;
+    position : fixed;
     left     : 0;
     top      : 50%;
     max-width    : 600px;
@@ -91,7 +143,8 @@ body {
     width  : 100%;
 }
 
-.d-none,.sm-d-none {
+.d-none,
+.sm-d-none {
     display: none;
 }
 
@@ -336,14 +389,16 @@ body {
         opacity     : 1;
 
     }
-    #entry-btn{
+
+    #entry-btn {
         z-index: 500;
     }
+
     #bg-c-1,
     #bg-c-2 {
         transition-delay: .8s;
         opacity         : 1;
-        z-index:1;
+        z-index         : 1;
     }
 
     #bg-c-2 {
@@ -378,8 +433,8 @@ body {
 #entry-btn {
     z-index         : 777;
     margin          : 49px 101px;
-    max-width           : 250px;
-    max-height          : 100px;
+    max-width       : 250px;
+    max-height      : 100px;
     background-color: #fff;
     text-align      : center;
     line-height     : 100px;
@@ -413,12 +468,12 @@ a#entry-btn {
 }
 
 #pop-up {
-    position        : absolute;
-    top             : 0;
-    right           : 0;
-    left            : 0;
-    bottom          : 0;
-    background-color: rgba(0, 0, 0, .6);
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    left               : 0;
+    bottom             : 0;
+    background-color   : rgba(0, 0, 0, .6);
     // z-index         : 999;
 
     #content {

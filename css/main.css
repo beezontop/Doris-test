@@ -6,6 +6,45 @@ body {
   background-color: #000;
   overflow: hidden;
 }
+#new-container {
+  position: relative;
+}
+#new-container .back-r-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100px;
+  max-height: 100px;
+  transform: scaleX(-1);
+}
+#new-container .back-r-1 img {
+  width: 100%;
+  height: auto;
+}
+#new-container .back-r-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 250px;
+  max-height: 250px;
+  transform: scaleX(-1);
+}
+#new-container .back-r-2 img {
+  width: 100%;
+  height: auto;
+}
+#new-container .back-l-1 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  transform: translateY(-50%);
+}
+#new-container .back-l-1 img {
+  width: 100%;
+  height: auto;
+}
 #container {
   max-width: 767px;
   overflow: hidden;
@@ -16,19 +55,13 @@ body {
   height: 100%;
 }
 .back-r-1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 200px;
-  max-height: 200px;
-  transform: scaleX(-1);
-}
-.back-r-1 img {
-  width: 100%;
-  height: auto;
+  /* & img {
+        width          : 100%;
+        height         : auto;
+    } */
 }
 .back-r-2 {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   max-width: 400px;
@@ -40,7 +73,7 @@ body {
   height: auto;
 }
 .back-l-1 {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 50%;
   max-width: 600px;

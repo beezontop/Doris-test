@@ -8,7 +8,7 @@ $('document').ready(function(){
     function windowSize() {
         // let width=$(window).width()+"px";
         let height=$(window).height()+"px";
-        $('body').css({"width":"100%","height":height});
+        $('#new-container').css({"width":"100%","height":height});
     };
     $(window).resize(function() {
         windowSize();
