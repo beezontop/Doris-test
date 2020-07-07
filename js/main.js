@@ -23,11 +23,12 @@ $('document').ready(function(){
 
     $('#new-container').mouseleave(function(e){
 
-        $('#left-top,#right-top,#right-bottom,#left-bottom').removeClass('d-none');
-        $('#left-top').animate({"left": "0"},1000);
-        $('#right-top').animate({"top": "0"},1000);
-        $('#right-bottom').animate({"right": "0"},1000);
-        $('#left-bottom').animate({"top": "50%"},1000);
+
+        $('#left-top,#right-top,#right-bottom,#left-bottom').stop().removeClass('d-none');
+        $('#left-top').animate({"left": "0"},500);
+        $('#right-top').animate({"top": "0"},500);
+        $('#right-bottom').animate({"right": "0"},500);
+        $('#left-bottom').animate({"top": "50%"},500);
     });
     
     function windowSize() {
