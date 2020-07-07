@@ -6,9 +6,9 @@ $('document').ready(function(){
     });
  
     function windowSize() {
-        let width=$(window).width()+"px";
+        // let width=$(window).width()+"px";
         let height=$(window).height()+"px";
-        $('body').css({"width":width,"height":height});
+        $('body').css({"width":"100%","height":height});
     };
     $(window).resize(function() {
         windowSize();

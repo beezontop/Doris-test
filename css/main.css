@@ -6,6 +6,9 @@ body {
   background-color: #000;
   overflow: hidden;
 }
+.container {
+  min-width: 540px;
+}
 #main-bg {
   position: relative;
   width: 100%;
@@ -15,8 +18,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   transform: scaleX(-1);
 }
 .back-r-1 img {
@@ -27,8 +30,8 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
   transform: scaleX(-1);
 }
 .back-r-2 img {
@@ -39,8 +42,8 @@ body {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 600px;
-  height: 600px;
+  max-width: 600px;
+  max-height: 600px;
   transform: translateY(-50%);
 }
 .back-l-1 img {
@@ -282,8 +285,8 @@ body {
 #entry-btn {
   z-index: 777;
   margin: 49px 101px;
-  width: 250px;
-  height: 100px;
+  min-width: 250px;
+  min-height: 100px;
   background-color: #fff;
   text-align: center;
   line-height: 100px;
