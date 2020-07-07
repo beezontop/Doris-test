@@ -60,15 +60,49 @@ body {
     }
 
     #entry{
-        opacity: 1;
+        position  : absolute;
+        margin    : 0 auto;
+        top       : 50%;
+        left      : 50%;
+        transform : translate(-50%, -50%);
+        border    : 1px transparent solid;
+        transition: 1s;
+        opacity   : 0;
         #entry-btn{
             margin:0px;
             width: 200px;
             height: 100px;
             font-size: 40px;
+            z-index         : 777;
+            background-color: #fff;
+            text-align      : center;
+            line-height     : 100px;
         }
     }
+    &:hover{
+
+        #entry {
+            border-color: @color-golden;
+            opacity     : 1;
+        }
+    
+        #entry-btn {
+            z-index: 500;
+        }
+    
+        #d,
+        #o,
+        #r,
+        #i,
+        #s {
+            top    : 0;
+            opacity: 1;
+        }
+
+    }
 }
+
+
 
 // ///////////////////////////////////////////////
 
@@ -248,7 +282,7 @@ body {
     position        : absolute;
     background-color: black;
     z-index         : 888;
-    transition      : 1s;
+    // transition      : 1s;
 }
 
 #left-top,
@@ -289,7 +323,7 @@ body {
 }
 
 
-#new-container:hover {
+#container:hover {
 
     #left-top,
     #right-top,
@@ -371,29 +405,7 @@ body {
 }
 
 
-#entry {
-    position  : absolute;
-    margin    : 0 auto;
-    top       : 50%;
-    left      : 50%;
-    transform : translate(-50%, -50%);
-    transition: 1s;
-    border    : 1px transparent solid;
-    opacity   : 0;
-}
 
-
-#entry-btn {
-    z-index         : 777;
-    margin          : 49px 101px;
-    // max-width       : 250px;
-    // max-height      : 100px;
-    background-color: #fff;
-    text-align      : center;
-    line-height     : 100px;
-    font-size       : 50px;
-
-}
 
 a#entry-btn {
     padding: 50px;
