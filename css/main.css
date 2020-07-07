@@ -6,7 +6,7 @@ body {
   background-color: #000;
   overflow: hidden;
 }
-.container {
+#container {
   min-width: 540px;
   overflow: hidden;
 }
