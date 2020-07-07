@@ -58,6 +58,16 @@ body {
         }
     
     }
+
+    #entry{
+        opacity: 1;
+        #entry-btn{
+            margin:0px;
+            width: 200px;
+            height: 100px;
+            font-size: 40px;
+        }
+    }
 }
 
 // ///////////////////////////////////////////////
@@ -68,63 +78,6 @@ body {
     max-width: 767px;
     overflow : hidden;
 }
-
-#main-bg {
-    position: relative;
-    width   : 100%;
-    height  : 100%;
-}
-
-
-
-.back-r-1 {
-    // position           : absolute;
-    // top                : 0;
-    // left               : 0;
-    // max-width              : 200px;
-    // max-height             : 200px;
-    // background-image: url(img\01.png);
-    // background-color: red;
-    /* & img {
-        width          : 100%;
-        height         : auto;
-    } */
-    // transform:scaleX(-1);
-}
-
-.back-r-2 {
-    position: fixed;
-    right   : 0;
-    bottom  : 0;
-    max-width   : 400px;
-    max-height  : 400px;
-
-    & img {
-        width : 100%;
-        height: auto;
-    }
-
-    transform:scaleX(-1);
-}
-
-.back-l-1 {
-    position : fixed;
-    left     : 0;
-    top      : 50%;
-    max-width    : 600px;
-    max-height   : 600px;
-    transform: translateY(-50%);
-
-    & img {
-        width : 100%;
-        height: auto;
-    }
-
-}
-
-
-
-
 
 .row {
     margin: 0 -5%;
@@ -336,7 +289,7 @@ body {
 }
 
 
-#container:hover {
+#new-container:hover {
 
     #left-top,
     #right-top,
@@ -433,8 +386,8 @@ body {
 #entry-btn {
     z-index         : 777;
     margin          : 49px 101px;
-    max-width       : 250px;
-    max-height      : 100px;
+    // max-width       : 250px;
+    // max-height      : 100px;
     background-color: #fff;
     text-align      : center;
     line-height     : 100px;
@@ -535,3 +488,53 @@ a#entry-btn {
         background-color: rgba(255, 0, 0, .1);
     }
 }
+
+
+
+//  old version
+
+/*
+.back-r-1 {
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    max-width              : 200px;
+    max-height             : 200px;
+    background-image: url(img\01.png);
+    background-color: red;
+    & img {
+        width          : 100%;
+        height         : auto;
+    }
+    transform:scaleX(-1);
+}
+
+.back-r-2 {
+    position: fixed;
+    right   : 0;
+    bottom  : 0;
+    max-width   : 400px;
+    max-height  : 400px;
+
+    & img {
+        width : 100%;
+        height: auto;
+    }
+
+    transform:scaleX(-1);
+}
+
+.back-l-1 {
+    position : fixed;
+    left     : 0;
+    top      : 50%;
+    max-width    : 600px;
+    max-height   : 600px;
+    transform: translateY(-50%);
+
+    & img {
+        width : 100%;
+        height: auto;
+    }
+
+}*/

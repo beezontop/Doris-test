@@ -45,44 +45,18 @@ body {
   width: 100%;
   height: auto;
 }
+#new-container #entry {
+  opacity: 1;
+}
+#new-container #entry #entry-btn {
+  margin: 0px;
+  width: 200px;
+  height: 100px;
+  font-size: 40px;
+}
 #container {
   max-width: 767px;
   overflow: hidden;
-}
-#main-bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.back-r-1 {
-  /* & img {
-        width          : 100%;
-        height         : auto;
-    } */
-}
-.back-r-2 {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  max-width: 400px;
-  max-height: 400px;
-  transform: scaleX(-1);
-}
-.back-r-2 img {
-  width: 100%;
-  height: auto;
-}
-.back-l-1 {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  max-width: 600px;
-  max-height: 600px;
-  transform: translateY(-50%);
-}
-.back-l-1 img {
-  width: 100%;
-  height: auto;
 }
 .row {
   margin: 0 -5%;
@@ -246,64 +220,64 @@ body {
   top: 50%;
   right: 50%;
 }
-#container:hover #left-top,
-#container:hover #right-top,
-#container:hover #right-bottom,
-#container:hover #left-bottom {
+#new-container:hover #left-top,
+#new-container:hover #right-top,
+#new-container:hover #right-bottom,
+#new-container:hover #left-bottom {
   opacity: 0;
 }
-#container:hover #left-top {
+#new-container:hover #left-top {
   transform: translateX(-1000px);
 }
-#container:hover #right-top {
+#new-container:hover #right-top {
   transform: translateY(-1000px);
 }
-#container:hover #right-bottom {
+#new-container:hover #right-bottom {
   transform: translateX(1000px);
 }
-#container:hover #left-bottom {
+#new-container:hover #left-bottom {
   transform: translateY(1000px);
 }
-#container:hover .square-left-top {
+#new-container:hover .square-left-top {
   transform: rotate(180deg);
 }
-#container:hover .square-right-top {
+#new-container:hover .square-right-top {
   transform: rotate(-90deg);
 }
-#container:hover .square-right-bottom {
+#new-container:hover .square-right-bottom {
   transform: rotate(360deg);
 }
-#container:hover .square-left-bottom {
+#new-container:hover .square-left-bottom {
   transform: rotate(90deg);
 }
-#container:hover .square-left-top,
-#container:hover .square-right-top,
-#container:hover .square-right-bottom,
-#container:hover .square-left-bottom {
+#new-container:hover .square-left-top,
+#new-container:hover .square-right-top,
+#new-container:hover .square-right-bottom,
+#new-container:hover .square-left-bottom {
   opacity: 0;
 }
-#container:hover #entry {
+#new-container:hover #entry {
   border-color: #deb555;
   opacity: 1;
 }
-#container:hover #entry-btn {
+#new-container:hover #entry-btn {
   z-index: 500;
 }
-#container:hover #bg-c-1,
-#container:hover #bg-c-2 {
+#new-container:hover #bg-c-1,
+#new-container:hover #bg-c-2 {
   transition-delay: 0.8s;
   opacity: 1;
   z-index: 1;
 }
-#container:hover #bg-c-2 {
+#new-container:hover #bg-c-2 {
   transition-delay: 1.8s;
   opacity: 1;
 }
-#container:hover #d,
-#container:hover #o,
-#container:hover #r,
-#container:hover #i,
-#container:hover #s {
+#new-container:hover #d,
+#new-container:hover #o,
+#new-container:hover #r,
+#new-container:hover #i,
+#new-container:hover #s {
   top: 0;
   opacity: 1;
 }
@@ -320,8 +294,6 @@ body {
 #entry-btn {
   z-index: 777;
   margin: 49px 101px;
-  max-width: 250px;
-  max-height: 100px;
   background-color: #fff;
   text-align: center;
   line-height: 100px;
@@ -403,3 +375,48 @@ a#entry-btn {
   height: 100%;
   background-color: rgba(255, 0, 0, 0.1);
 }
+/*
+.back-r-1 {
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    max-width              : 200px;
+    max-height             : 200px;
+    background-image: url(img\01.png);
+    background-color: red;
+    & img {
+        width          : 100%;
+        height         : auto;
+    }
+    transform:scaleX(-1);
+}
+
+.back-r-2 {
+    position: fixed;
+    right   : 0;
+    bottom  : 0;
+    max-width   : 400px;
+    max-height  : 400px;
+
+    & img {
+        width : 100%;
+        height: auto;
+    }
+
+    transform:scaleX(-1);
+}
+
+.back-l-1 {
+    position : fixed;
+    left     : 0;
+    top      : 50%;
+    max-width    : 600px;
+    max-height   : 600px;
+    transform: translateY(-50%);
+
+    & img {
+        width : 100%;
+        height: auto;
+    }
+
+}*/
