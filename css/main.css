@@ -248,10 +248,14 @@ body {
   border-color: #deb555;
   opacity: 1;
 }
+#container:hover #entry-btn {
+  z-index: 500;
+}
 #container:hover #bg-c-1,
 #container:hover #bg-c-2 {
   transition-delay: 0.8s;
   opacity: 1;
+  z-index: 1;
 }
 #container:hover #bg-c-2 {
   transition-delay: 1.8s;
@@ -275,7 +279,8 @@ body {
   border: 1px transparent solid;
   opacity: 0;
 }
-#title {
+#entry-btn {
+  z-index: 777;
   margin: 49px 101px;
   width: 250px;
   height: 100px;
@@ -284,7 +289,7 @@ body {
   line-height: 100px;
   font-size: 50px;
 }
-a#title-btn {
+a#entry-btn {
   padding: 50px;
 }
 #d,
@@ -313,7 +318,6 @@ a#title-btn {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;
 }
 #pop-up #content {
   position: absolute;
@@ -347,8 +351,8 @@ a#title-btn {
 #bg-pop-up {
   overflow: hidden;
 }
-#bg-box-1,
-#bg-box-2 {
+#entry-bg #bg-box-1,
+#entry-bg #bg-box-2 {
   position: absolute;
   top: 0;
   right: 0;
@@ -356,7 +360,7 @@ a#title-btn {
   height: 100%;
   background-color: rgba(255, 0, 0, 0.1);
 }
-#bg-box-2 {
+#entry-bg #bg-box-2 {
   width: 20%;
   height: 100%;
   background-color: rgba(255, 0, 0, 0.1);

@@ -11,49 +11,56 @@ body {
     background-color: #000;
     overflow        : hidden;
 }
-#main-bg{
-    position:relative;
-    width:100%;
-    height:100%;
+
+#main-bg {
+    position: relative;
+    width   : 100%;
+    height  : 100%;
 }
 
-.back-r-1{
+.back-r-1 {
     position: absolute;
-    top:0;
-    right:0;
-    width:200px;
-    height:200px;
-    & img{
-        width:100%;
-        height:auto;
+    top     : 0;
+    right   : 0;
+    width   : 200px;
+    height  : 200px;
+
+    & img {
+        width : 100%;
+        height: auto;
     }
+
     transform:scaleX(-1);
 }
 
-.back-r-2{
+.back-r-2 {
     position: absolute;
-    right:0;
-    bottom:0;
-    width:400px;
-    height:400px;
-    & img{
-        width:100%;
-        height:auto;
+    right   : 0;
+    bottom  : 0;
+    width   : 400px;
+    height  : 400px;
+
+    & img {
+        width : 100%;
+        height: auto;
     }
+
     transform:scaleX(-1);
 }
-.back-l-1{
-    position: absolute;
-    left:0;
-    top:50%;
-    width: 600px;
-    height:600px;
+
+.back-l-1 {
+    position : absolute;
+    left     : 0;
+    top      : 50%;
+    width    : 600px;
+    height   : 600px;
     transform: translateY(-50%);
-    & img{
-        width:100%;
-        height:auto;
+
+    & img {
+        width : 100%;
+        height: auto;
     }
-    
+
 }
 
 
@@ -64,7 +71,8 @@ body {
     margin: 0 -5%;
 }
 
-.clearfix:after,.row:after {
+.clearfix:after,
+.row:after {
     display: table;
     content: "";
     clear  : both;
@@ -76,19 +84,19 @@ body {
     width  : 100%;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
-.d-block{
-    display:block;
+.d-block {
+    display: block;
 }
 
 
 .triangle {
-    position: absolute;
+    position     : absolute;
     width        : 0px;
-    height:0px;
+    height       : 0px;
     border-top   : 10px solid transparent;
     border-right : 10px solid @color-trans-golden;
     border-bottom: 10px solid @color-trans-golden;
@@ -97,7 +105,7 @@ body {
 
 
 
- 
+
 #bg-c-1 {
     transform          : scale(20) rotate(-45deg);
     top                : 50%;
@@ -267,7 +275,7 @@ body {
 
 
 #container:hover {
-    
+
     #left-top,
     #right-top,
     #right-bottom,
@@ -277,7 +285,7 @@ body {
 
     #left-top {
         transform: translateX(-1000px);
-       
+
     }
 
     #right-top {
@@ -314,22 +322,26 @@ body {
     .square-left-bottom {
         opacity: 0;
     }
+
     #entry {
         border-color: @color-golden;
         opacity     : 1;
 
     }
-
+    #entry-btn{
+        z-index: 500;
+    }
     #bg-c-1,
-            #bg-c-2 {
-                transition-delay: .8s;
-                opacity         : 1;
-            }
-        
-            #bg-c-2 {
-                transition-delay: 1.8s;
-                opacity         : 1;
-            }
+    #bg-c-2 {
+        transition-delay: .8s;
+        opacity         : 1;
+        z-index:1;
+    }
+
+    #bg-c-2 {
+        transition-delay: 1.8s;
+        opacity         : 1;
+    }
 
     #d,
     #o,
@@ -339,7 +351,7 @@ body {
         top    : 0;
         opacity: 1;
     }
-    
+
 }
 
 
@@ -355,7 +367,8 @@ body {
 }
 
 
-#title {
+#entry-btn {
+    z-index         : 777;
     margin          : 49px 101px;
     width           : 250px;
     height          : 100px;
@@ -366,8 +379,8 @@ body {
 
 }
 
-a#title-btn{
-   padding:50px; 
+a#entry-btn {
+    padding: 50px;
 }
 
 #d,
@@ -381,7 +394,6 @@ a#title-btn{
     transition: 1s;
     opacity   : 0;
 }
-
 
 #o,
 #i {
@@ -399,7 +411,7 @@ a#title-btn{
     left            : 0;
     bottom          : 0;
     background-color: rgba(0, 0, 0, .6);
-    z-index         : 999;
+    // z-index         : 999;
 
     #content {
         position        : absolute;
@@ -416,11 +428,11 @@ a#title-btn{
 
             &>div {
 
-                height     : 50%;
+                height: 50%;
 
                 a {
                     display       : block;
-                    padding:25px 0;
+                    padding       : 25px 0;
                     text-align    : center;
                     color         : @color-golden;
                     text-transform: uppercase;
@@ -428,8 +440,9 @@ a#title-btn{
                     font-size     : 50px;
                 }
             }
-            .border{
-                height:100%;
+
+            .border {
+                height       : 100%;
                 border-bottom: 1px @color-golden solid;
             }
         }
@@ -437,21 +450,25 @@ a#title-btn{
 
 }
 
-#bg-pop-up{
+#bg-pop-up {
     overflow: hidden;
 }
 
-#bg-box-1,#bg-box-2{
-    position: absolute;
-    top:0;
-    right:0;
-    width:40%;
-    height:100%;
-    background-color:rgba(255,0,0,.1);
-}
+#entry-bg {
 
-#bg-box-2{
-    width:20%;
-    height:100%;
-    background-color:rgba(255,0,0,.1);
+    #bg-box-1,
+    #bg-box-2 {
+        position        : absolute;
+        top             : 0;
+        right           : 0;
+        width           : 40%;
+        height          : 100%;
+        background-color: rgba(255, 0, 0, .1);
+    }
+
+    #bg-box-2 {
+        width           : 20%;
+        height          : 100%;
+        background-color: rgba(255, 0, 0, .1);
+    }
 }
