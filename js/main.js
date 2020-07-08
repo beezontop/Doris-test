@@ -1,14 +1,22 @@
 $('document').ready(function(){
 
-    $('#title-btn').click(function(e){
-        $('#pop-up').addClass('d-block');
+    $('#entry-btn').click(function(e){
+        $('#pop-up').addClass('d-block').animate({"opacity":"1"},600);
+        $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').addClass('d-none');
         $(e.target).preventDefault();
     });
     
+    $('#cover-bg').click(function(){
+        $('#pop-up').animate({"opacity":"0"},400,function(){
+            $('#pop-up').removeClass('d-block');
+        });
+    })
     
     //手機板(sm) + 平板(md) : #new-container:hover
 
     $('#new-container').mouseenter(function(e){
+
+
         $('#left-top').animate({"left": "-900px"},1000,function(e){
             $('#left-top').addClass('d-none');
         });
@@ -19,19 +27,19 @@ $('document').ready(function(){
             $('#right-bottom').addClass('d-none');
         });
         $('#left-bottom').animate({"top": "900px"},1000,function(e){
-            $('#left-bottom').addClass('d-none');
+            $('#left-bottom,#center-decor-square').addClass('d-none');
         });
     });
 
-    $('#new-container').mouseleave(function(e){
+    /* $('#new-container').mouseleave(function(e){
 
 
-        $('#left-top,#right-top,#right-bottom,#left-bottom').stop().removeClass('d-none');
+        $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').stop().removeClass('d-none');
         $('#left-top').animate({"left": "0"},500);
         $('#right-top').animate({"top": "0"},500);
         $('#right-bottom').animate({"right": "0"},500);
         $('#left-bottom').animate({"top": "50%"},500);
-    });
+    }); */
     
     function windowSize() {
         // let width=$(window).width()+"px";

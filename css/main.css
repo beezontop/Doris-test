@@ -2,10 +2,10 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body {
   background-color: #000;
-  overflow: hidden;
 }
 #new-container {
   position: relative;
@@ -53,6 +53,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px transparent solid;
   transition: 1s;
   opacity: 0;
@@ -63,9 +64,11 @@ body {
   height: 100px;
   font-size: 40px;
   z-index: 777;
-  background-color: #fff;
   text-align: center;
   line-height: 100px;
+  color: #deb555;
+  background-color: #000;
+  border: 1px solid #deb555;
 }
 #new-container .entry-bg-c1,
 #new-container .entry-bg-c2 {
@@ -102,7 +105,7 @@ body {
   opacity: 0;
 }
 #new-container:hover #entry {
-  border-color: #deb555;
+  border-color: rgba(222, 181, 85, 0.3);
   opacity: 1;
   z-index: 10;
 }
@@ -400,14 +403,23 @@ a#entry-btn {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 999;
+  opacity: 0;
+}
+#pop-up #cover-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 #pop-up #content {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40%;
-  height: 35%;
+  width: 60%;
+  height: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255);
   border-radius: 8px;
@@ -416,16 +428,17 @@ a#entry-btn {
   height: 100%;
 }
 #pop-up #content .row > div {
-  height: 50%;
+  height: 33.3333%;
 }
 #pop-up #content .row > div a {
   display: block;
-  padding: 25px 0;
+  padding: 20px 0 25px 0;
   text-align: center;
   color: #deb555;
   text-transform: uppercase;
   font-family: 'Six Caps', sans-serif;
-  font-size: 50px;
+  font-size: 45px;
+  letter-spacing: 1px;
 }
 #pop-up #content .row .border {
   height: 100%;
