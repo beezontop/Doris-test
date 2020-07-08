@@ -324,12 +324,12 @@ body {
 #pop-up #pop-up-menu .row > div {
   height: 33.3333%;
 }
-#pop-up #pop-up-menu .row > div a {
+#pop-up #pop-up-menu .row a.pop-up-item {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 2em;
+  line-height: 200%;
   text-transform: uppercase;
   color: #deb555;
   font-family: 'Six Caps', sans-serif;
