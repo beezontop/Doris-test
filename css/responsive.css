@@ -18,6 +18,9 @@
   body #new-container #pop-up #pop-up-menu {
     width: 50%;
   }
+  body #new-container #pop-up #pop-up-menu a.pop-up-item {
+    font-size: 45px;
+  }
 }
 @media (min-width: 1200px) {
   body #new-container {
