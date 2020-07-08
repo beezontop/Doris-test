@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  /*     #new-container:hover{
+        .md-block{
+            display:block;
+        }
+    } */
+  #new-container .md-d-block {
+    display: block;
+  }
+}

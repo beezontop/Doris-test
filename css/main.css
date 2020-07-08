@@ -1,3 +1,4 @@
+@import "responsive.css";
 * {
   margin: 0;
   box-sizing: border-box;
@@ -48,6 +49,7 @@ body {
 #new-container #entry {
   position: absolute;
   margin: 0 auto;
+  padding: 5% 10%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -65,9 +67,44 @@ body {
   text-align: center;
   line-height: 100px;
 }
+#new-container .entry-bg-c1,
+#new-container .entry-bg-c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  max-height: 300px;
+  transition: 1s;
+  opacity: 0;
+}
+#new-container .entry-bg-c1 img,
+#new-container .entry-bg-c2 img {
+  width: 100%;
+  height: auto;
+}
+#new-container:hover .square-left-top {
+  transform: rotate(180deg);
+}
+#new-container:hover .square-right-top {
+  transform: rotate(-90deg);
+}
+#new-container:hover .square-right-bottom {
+  transform: rotate(360deg);
+}
+#new-container:hover .square-left-bottom {
+  transform: rotate(90deg);
+}
+#new-container:hover .square-left-top,
+#new-container:hover .square-right-top,
+#new-container:hover .square-right-bottom,
+#new-container:hover .square-left-bottom {
+  opacity: 0;
+}
 #new-container:hover #entry {
   border-color: #deb555;
   opacity: 1;
+  z-index: 10;
 }
 #new-container:hover #entry-btn {
   z-index: 500;
@@ -78,6 +115,16 @@ body {
 #new-container:hover #i,
 #new-container:hover #s {
   top: 0;
+  opacity: 1;
+}
+#new-container:hover .entry-bg-c1,
+#new-container:hover .entry-bg-c2 {
+  transition-delay: 0.8s;
+  opacity: 1;
+  z-index: 1;
+}
+#new-container:hover .entry-bg-c2 {
+  transition-delay: 1.8s;
   opacity: 1;
 }
 #container {
@@ -245,67 +292,86 @@ body {
   top: 50%;
   right: 50%;
 }
-#container:hover #left-top,
-#container:hover #right-top,
-#container:hover #right-bottom,
-#container:hover #left-bottom {
-  opacity: 0;
-}
-#container:hover #left-top {
-  transform: translateX(-1000px);
-}
-#container:hover #right-top {
-  transform: translateY(-1000px);
-}
-#container:hover #right-bottom {
-  transform: translateX(1000px);
-}
-#container:hover #left-bottom {
-  transform: translateY(1000px);
-}
-#container:hover .square-left-top {
-  transform: rotate(180deg);
-}
-#container:hover .square-right-top {
-  transform: rotate(-90deg);
-}
-#container:hover .square-right-bottom {
-  transform: rotate(360deg);
-}
-#container:hover .square-left-bottom {
-  transform: rotate(90deg);
-}
-#container:hover .square-left-top,
-#container:hover .square-right-top,
-#container:hover .square-right-bottom,
-#container:hover .square-left-bottom {
-  opacity: 0;
-}
-#container:hover #entry {
-  border-color: #deb555;
-  opacity: 1;
-}
-#container:hover #entry-btn {
-  z-index: 500;
-}
-#container:hover #bg-c-1,
-#container:hover #bg-c-2 {
-  transition-delay: 0.8s;
-  opacity: 1;
-  z-index: 1;
-}
-#container:hover #bg-c-2 {
-  transition-delay: 1.8s;
-  opacity: 1;
-}
-#container:hover #d,
-#container:hover #o,
-#container:hover #r,
-#container:hover #i,
-#container:hover #s {
-  top: 0;
-  opacity: 1;
-}
+/* #container:hover {
+
+    #left-top,
+    #right-top,
+    #right-bottom,
+    #left-bottom {
+        opacity: 0;
+    }
+
+    #left-top {
+        transform: translateX(-1000px);
+    }
+
+    #right-top {
+        transform: translateY(-1000px);
+    }
+
+    #right-bottom {
+        transform: translateX(1000px);
+    }
+
+    #left-bottom {
+        transform: translateY(1000px);
+    }
+
+    .square-left-top {
+        transform: rotate(180deg);
+    }
+
+    .square-right-top {
+        transform: rotate(-90deg);
+    }
+
+    .square-right-bottom {
+        transform: rotate(360deg);
+    }
+
+    .square-left-bottom {
+        transform: rotate(90deg);
+    }
+
+    .square-left-top,
+    .square-right-top,
+    .square-right-bottom,
+    .square-left-bottom {
+        opacity: 0;
+    }
+
+    #entry {
+        border-color: @color-golden;
+        opacity     : 1;
+
+    }
+
+    #entry-btn {
+        z-index: 500;
+    }
+
+    #bg-c-1,
+    #bg-c-2 {
+        transition-delay: .8s;
+        opacity         : 1;
+        z-index         : 1;
+    }
+
+    #bg-c-2 {
+        transition-delay: 1.8s;
+        opacity         : 1;
+    }
+
+    #d,
+    #o,
+    #r,
+    #i,
+    #s {
+        top    : 0;
+        opacity: 1;
+    }
+
+} */
 a#entry-btn {
   padding: 50px;
 }

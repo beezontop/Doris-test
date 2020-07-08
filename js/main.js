@@ -4,7 +4,9 @@ $('document').ready(function(){
         $('#pop-up').addClass('d-block');
         $(e.target).preventDefault();
     });
-
+    
+    
+    //手機板(sm) + 平板(md) : #new-container:hover
 
     $('#new-container').mouseenter(function(e){
         $('#left-top').animate({"left": "-900px"},1000,function(e){
