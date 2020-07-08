@@ -432,7 +432,7 @@ a#entry-btn {
 }
 #pop-up #content .row > div a {
   display: block;
-  padding: 20px 0 25px 0;
+  padding: 20px;
   text-align: center;
   color: #deb555;
   text-transform: uppercase;
