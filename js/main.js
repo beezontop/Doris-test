@@ -1,9 +1,9 @@
 $('document').ready(function(){
 
-    $('#entry-btn').click(function(e){
+    $('a#btn').click(function(e){
         $('#pop-up').addClass('d-block').animate({"opacity":"1"},600);
         $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').addClass('d-none');
-        $(e.target).preventDefault();
+        e.preventDefault();
     });
     
     $('#cover-bg').click(function(){

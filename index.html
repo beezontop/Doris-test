@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doris</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- font of entry-btn -->
+    <link href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font of pop-up menu -->
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
 
+    <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
 
+    <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
 
 <body>
-
-
     <div id="new-container">
         <!-- background -->
         <div id="main-bg">
-            <div class="back-r-1">
+            <div class="main-bg-r-1">
                 <img src="img/01.png" alt="">
             </div>
-            <div class="back-r-2">
+            <div class="main-bg-r-2">
                 <img src="img/03.png" alt="">
             </div>
-            <div class="back-l-1">
+            <div class="main-bg-l-1">
                 <img src="img/02.png" alt="">
             </div>
+            <!-- background of entry-btn -->
             <div class="entry-bg-c1"><img src="img/c-1.png" alt="entry-bg" /></div>
             <div class="entry-bg-c2"><img src="img/c-2.png" alt="entry-bg" /></div>
         </div>
@@ -50,24 +54,30 @@
             <div id="left-bottom"></div>
         </div>
 
-        <div id="new-content">
-            <a href="#">
-                <div id="entry">
-                    <div id="entry-btn">
-                        <p id="d">D</p>
-                        <p id="o">O</p>
-                        <p id="r">R</p>
-                        <p id="i">I</p>
-                        <p id="s">S</p>
-                    </div>
-                </div>
-            </a>
+        <!-- entry -->
+        <div id="entry">
+            <div id="entry-content">
+                <a href="#" id="btn">
+                    <p id="d">D</p>
+                    <p id="o">O</p>
+                    <p id="r">R</p>
+                    <p id="i">I</p>
+                    <p id="s">S</p>
+                </a>
+            </div>
         </div>
 
+        <!-- pop-up-menu -->
         <div id="pop-up" class="d-none">
             <div id="cover-bg"></div>
-            <div id="content">
+           
+            <div id="pop-up-menu">
+                <div id="bg-pop-up">
+                    <div id="bg-box-1"></div>
+                    <div id="bg-box-2"></div>
+                </div>
                 <div class="row">
+                    
                     <div class="sm-col-12 pop-up-item">
                         <div class="border"><a href="#">about me</a></div>
                     </div>
@@ -78,63 +88,7 @@
                         <a href="#">blog</a>
                     </div>
                 </div>
-                <div id="bg-pop-up">
-                    <div id="bg-box-1"></div>
-                    <div id="bg-box-2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="d-none">
-
-        <div id="main-bg">
-            <div class="back-r-1">
-                <!-- <img src="img/01.png" alt=""> -->
-            </div>
-            <div class="back-r-2">
-                <!-- <img src="img/03.png" alt=""> -->
-            </div>
-            <div class="back-l-1">
-                <!-- <img src="img/02.png" alt=""> -->
-            </div>
-        </div>
-
-        <div id="container">
-
-            <!-- the cover decorations on the entry btn -->
-            <div id="center-decor-square">
-                <div class="triangle square-left-top"></div>
-                <div class="triangle square-right-top"></div>
-                <div class="triangle square-right-bottom"></div>
-                <div class="triangle square-left-bottom"></div>
-            </div>
-
-            <!--  <div id="center-decor-rectangle" class="sm-d-none">
-                <div id="left-top"></div>
-                <div id="right-top"></div>
-                <div id="right-bottom"></div>
-                <div id="left-bottom"></div>
-            </div> -->
-
-            <!-- the entry btn -->
-            <div id="entry">
-                <div id="entry-btn">
-                    <p id="d">D</p>
-                    <p id="o">O</p>
-                    <p id="r">R</p>
-                    <p id="i">I</p>
-                    <p id="s">S</p>
-                </div>
-            </div>
-
-            <!-- the bg behind the entry btn -->
-            <div id="entry-bg">
-                <div id="bg-c-1" class="triangle"></div>
-                <div id="bg-c-2" class="triangle"></div>
+                
             </div>
         </div>
     </div>
