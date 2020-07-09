@@ -1,10 +1,25 @@
 $('document').ready(function(){
 
-    
-    
+
+    $('body').on("click","#btn-portfolio",function(e){
+       $('#pop-up-item-content').addClass('d-block').animate({"opacity":"1"},400);
+        e.target.preventDefault();
+    });
+
+/*     $('#btn-portfolio').click(function(e){
+         $('#pop-up-item-content').addClass('d-block').animate({"opacity":"1"},600);
+        e.target.preventDefault();
+   }); */
+     
     $('#cover-bg').click(function(){
-        $('#pop-up').animate({"opacity":"0"},400,function(){
-            $('#pop-up').removeClass('d-block');
+        $('#pop-up,#pop-up-item-content').animate({"opacity":"0"},400,function(){
+            $('#pop-up,#pop-up-item-content').removeClass('d-block');
+        });
+    })
+
+    $('.btn-close').click(function(){
+        $('#pop-up-item-content').animate({"opacity":"0"},400,function(){
+            $('#pop-up-item-content').removeClass('d-block');
         });
     })
     
