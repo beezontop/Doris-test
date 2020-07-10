@@ -90,8 +90,8 @@ header {
 .portfolio-iframe .more {
   position: absolute;
   width: 100%;
-  height: 63%;
-  top: 33%;
+  height: 100%;
+  top: 0;
   background-color: goldenrod;
   transition: 0.3s;
   opacity: 0;
@@ -115,7 +115,7 @@ header {
   opacity: 1;
 }
 footer {
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 10px;
   background-color: goldenrod;
 }
@@ -126,3 +126,13 @@ footer a {
   text-align: center;
   letter-spacing: 1px;
 }
+/* @media(min-width:768px) {
+
+    .portfolio-iframe {
+        .more {
+            top   : 25%;
+            height: 73%;
+        }
+    }
+}
+ */

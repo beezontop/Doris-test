@@ -108,3 +108,28 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+#pop-up-item-content {
+  position        : absolute;
+  width           : 90%;
+  height          : 90%;
+  top             : 50%;
+  left            : 50%;
+  transform       : translate(-50%, -50%);
+  opacity: 0;
+  iframe{
+      border          : 1px solid @color-golden;
+  }
+  .btn-close{
+      position: absolute;
+      padding: 5px 10px;
+      right: 0px;
+      top: 3px;
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: @color-golden;
+      text-decoration: none;
+  }
+}

@@ -1,27 +1,30 @@
 $('document').ready(function(){
 
-
+    //pop-up-menu
+    //to portfolio.html
     $('body').on("click","#btn-portfolio",function(e){
        $('#pop-up-item-content,#iframe-portfolio').addClass('d-block').animate({"opacity":"1"},400);
         e.target.preventDefault();
     });
 
+    //to about-me.html
     $('body').on("click","#btn-aboutme",function(e){
         $('#pop-up-item-content,#iframe-aboutme').addClass('d-block').animate({"opacity":"1"},400);
          e.target.preventDefault();
      });
 
-     
+    //close pop-up-menu by clicking cover-bg
     $('#cover-bg').click(function(){
         $('#pop-up,#pop-up-item-content').animate({"opacity":"0"},400,function(){
-            $('#pop-up,#pop-up-item-content').removeClass('d-block');
+            $('#pop-up,#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
         
     })
 
+    //close pop-up-menu by clicking btn
     $('.btn-close').click(function(){
         $('#pop-up-item-content').animate({"opacity":"0"},400,function(){
-            $('#pop-up-item-content').removeClass('d-block');
+            $('#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
     })
     

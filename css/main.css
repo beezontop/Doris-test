@@ -83,6 +83,30 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+#pop-up-item-content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+#pop-up-item-content iframe {
+  border: 1px solid #deb555;
+}
+#pop-up-item-content .btn-close {
+  position: absolute;
+  padding: 5px 10px;
+  right: 0px;
+  top: 3px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #deb555;
+  text-decoration: none;
+}
 * {
   overflow: hidden;
 }
@@ -365,6 +389,30 @@ body {
   bottom: 0;
   z-index: 999;
   opacity: 0;
+  /* #pop-up-item-content {
+        position        : absolute;
+        width           : 90%;
+        height          : 90%;
+        top             : 50%;
+        left            : 50%;
+        transform       : translate(-50%, -50%);
+        opacity: 0;
+        iframe{
+            border          : 1px solid @color-golden;
+        }
+        .btn-close{
+            position: absolute;
+            padding: 5px 10px;
+            right: 0px;
+            top: 3px;
+            font-size: 9px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: @color-golden;
+            text-decoration: none;
+        }
+    } */
 }
 #pop-up #cover-bg {
   position: absolute;
@@ -405,30 +453,6 @@ body {
   font-family: 'Six Caps', sans-serif;
   font-size: 35px;
   letter-spacing: 1px;
-}
-#pop-up #pop-up-item-content {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-#pop-up #pop-up-item-content iframe {
-  border: 1px solid #deb555;
-}
-#pop-up #pop-up-item-content .btn-close {
-  position: absolute;
-  padding: 5px 10px;
-  right: 0px;
-  top: 3px;
-  font-size: 9px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #deb555;
-  text-decoration: none;
 }
 #pop-up #bg-pop-up {
   position: absolute;

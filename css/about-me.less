@@ -103,21 +103,23 @@ header {
         width : 100%;
         height: 67vh;
     }
-    a{
+
+    a {
         display: block;
-        width: 100%;
-        height: 100%;
-        color:goldenrod;
+        width  : 100%;
+        height : 100%;
+        color  : goldenrod;
     }
 
     .more {
         position        : absolute;
         width           : 100%;
-        height          : 63%;
-        top             : 33%;
+        height          : 100%;
+        top             : 0;
         background-color: goldenrod;
-        transition: .3s;
-        opacity: 0;
+        transition      : .3s;
+        opacity         : 0;
+
         p {
             display         : inline-block;
             position        : absolute;
@@ -135,15 +137,15 @@ header {
         }
     }
 
-    &:hover{
-        .more{
+    &:hover {
+        .more {
             opacity: 1;
         }
     }
 }
 
 footer {
-    margin-top      : 30px;
+    margin-top      : 50px;
     padding         : 10px;
     background-color: goldenrod;
 
@@ -155,3 +157,15 @@ footer {
         letter-spacing : 1px;
     }
 }
+
+/* @media(min-width:768px) {
+
+    .portfolio-iframe {
+        .more {
+            top   : 25%;
+            height: 73%;
+        }
+    }
+}
+ */
+
