@@ -1,41 +1,18 @@
-@color-golden      : rgb(222, 181, 85);
-@color-trans-golden: rgba(222, 181, 85, .2);
+@import "public.less";
 @import "responsive.css";
 
 * {
-    margin    : 0;
-    box-sizing: border-box;
     overflow  : hidden;
-}
-
-body {
-    background-color: #000;
 }
 
 .row {
     margin: 0 -5%;
 }
 
-.clearfix:after,
-.row:after {
-    display: table;
-    content: "";
-    clear  : both;
-}
-
 .sm-col-12 {
     float  : left;
     padding: 0 5%;
     width  : 100%;
-}
-
-.d-none,
-.sm-d-none {
-    display: none;
-}
-
-.d-block {
-    display: block;
 }
 
 // sm手機 : ~767 md平板 : 768-1199 lg電腦 : 1200~
@@ -426,21 +403,20 @@ body {
     #pop-up-item-content {
         position        : absolute;
         width           : 90%;
-        height          : 70%;
+        height          : 90%;
         top             : 50%;
         left            : 50%;
         transform       : translate(-50%, -50%);
         opacity: 0;
         iframe{
             border          : 1px solid @color-golden;
-            
         }
         .btn-close{
             position: absolute;
             padding: 5px 10px;
-            right: 30px;
-            top: 10px;
-            font-size: 12px;
+            right: 0px;
+            top: 3px;
+            font-size: 9px;
             letter-spacing: 1px;
             text-transform: uppercase;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -470,6 +446,18 @@ body {
             background-color: rgba(222, 181, 85);
         }
 
+    }
+    
+    #welcome{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        background-color: black;
+        border: 1px solid goldenrod;
+        color: #fff;
     }
 
 }
