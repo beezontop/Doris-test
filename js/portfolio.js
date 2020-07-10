@@ -16,7 +16,6 @@ $(document).ready(function () {
         let workInfo = $(`<ul class="work-item">`);
 
         let imgUrl=work.image;
-        console.log(work);
         let imgTag = $(`<li><img src="${imgUrl}" /></li>`);
         let nameTag = $(`<li><p class="title">Name :</p><p class="name">${work.name} </p></li>`);
 

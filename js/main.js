@@ -2,7 +2,7 @@ $('document').ready(function(){
 
     //pop-up-menu
     //to portfolio.html
-    $('body').on("click","#btn-portfolio",function(e){
+    $('body').on("click","#btn-portfolio,#aboutme-more",function(e){
        $('#pop-up-item-content,#iframe-portfolio').addClass('d-block').animate({"opacity":"1"},400);
         e.target.preventDefault();
     });
@@ -27,6 +27,7 @@ $('document').ready(function(){
             $('#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
     })
+
     
     //手機板(sm) + 平板(md) : #new-container:hover
 
