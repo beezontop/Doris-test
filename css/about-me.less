@@ -1,105 +1,157 @@
 @import "public.css";
-body{
+
+body {
     // background-color: #000;
-    color:goldenrod;
+    color      : goldenrod;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 
-.row{
-    margin:0 -15px;
+.row {
+    margin: 0 -15px;
 }
 
-.sm-col-12{
-    float: left;
-    width:100%;
-    height:auto;
-    padding:0 15px;
+.sm-col-12 {
+    float  : left;
+    width  : 100%;
+    height : auto;
+    padding: 0 15px;
 }
 
-.container{
-    margin:0 auto;
-    padding:0 15px;
-    max-width:767px;
-    &>div,header,.skills{
-        padding-top:20px;
+.container {
+    margin   : 0 auto;
+    padding  : 0 15px;
+    max-width: 767px;
+
+    &>div,
+    header,
+    .skills {
+        padding-top: 20px;
     }
 }
 
-header{
+header {
     letter-spacing: 1px;
 }
 
-.intro{
-    padding:20px 0;
-    text-align: center;
-    line-height: 1.6em;
+.intro {
+    padding       : 20px 0;
+    text-align    : center;
+    line-height   : 1.6em;
     letter-spacing: 1px;
 }
 
-.skills{
-    .title{
-        padding: 5px 0;
-        text-align: center;
-        color:black;
+.skills {
+    .title {
+        padding         : 5px 0;
+        text-align      : center;
+        color           : black;
         background-color: goldenrod;
-        letter-spacing: 1px;
+        letter-spacing  : 1px;
     }
-    ul{
-        display: flex;
+
+    ul {
+        display        : flex;
         justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom:15px;
-        padding:0;
-        list-style: none;
-        li{
-            padding:2px 4px;
+        flex-wrap      : wrap;
+        margin-bottom  : 15px;
+        padding        : 0;
+        list-style     : none;
+
+        li {
+            padding       : 2px 4px;
             letter-spacing: 1px;
-            color:#fff;
+            color         : #fff;
         }
-        
+
     }
-    .row{
-        margin:0;
+
+    .row {
+        margin: 0;
     }
-    .skill-category{
-        padding:10px 0;
+
+    .skill-category {
+        padding       : 10px 0;
         text-transform: uppercase;
-        text-align: center;
-        font-weight: bold;
+        text-align    : center;
+        font-weight   : bold;
         letter-spacing: 2px;
     }
-    .languages,.tools{
-        border: 1px goldenrod solid;
+
+    .languages,
+    .tools {
+        border        : 1px goldenrod solid;
         text-transform: uppercase;
     }
-    .tools{
-        margin-top:-1px;
+
+    .tools {
+        margin-top: -1px;
     }
-    .text-sm{
+
+    .text-sm {
         font-size: 10px;
     }
 }
 
-.portfolio-iframe{
-    margin-top:30px;
-    border:1px solid goldenrod;
-    iframe{
-        width:100%;
-        height:100vh;
+.portfolio-iframe {
+    position  : relative;
+    margin-top: 30px;
+    border    : 1px solid goldenrod;
+
+    iframe {
+        width : 100%;
+        height: 67vh;
+    }
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        color:goldenrod;
+    }
+
+    .more {
+        position        : absolute;
+        width           : 100%;
+        height          : 63%;
+        top             : 33%;
+        background-color: goldenrod;
+        transition: .3s;
+        opacity: 0;
+        p {
+            display         : inline-block;
+            position        : absolute;
+            top             : 50%;
+            left            : 50%;
+            transform       : translate(-50%, -50%);
+            font-size       : 25px;
+            letter-spacing  : 1px;
+            width           : 95px;
+            height          : 95px;
+            line-height     : 95px;
+            text-align      : center;
+            background-color: white;
+            border-radius   : 50%;
+        }
+    }
+
+    &:hover{
+        .more{
+            opacity: 1;
+        }
     }
 }
 
-footer{
-    margin-top:30px;
-    padding:10px;
+footer {
+    margin-top      : 30px;
+    padding         : 10px;
     background-color: goldenrod;
-    a{
-        display:block;
-        color:white;
+
+    a {
+        display        : block;
+        color          : white;
         text-decoration: none;
-        text-align: center;
-        letter-spacing: 1px;
+        text-align     : center;
+        letter-spacing : 1px;
     }
 }
