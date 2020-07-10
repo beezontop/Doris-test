@@ -82,6 +82,30 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+#pop-up-item-content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+#pop-up-item-content iframe {
+  border: 1px solid #daa520;
+}
+#pop-up-item-content .btn-close {
+  position: absolute;
+  padding: 5px 10px;
+  right: 0px;
+  top: 3px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #daa520;
+  text-decoration: none;
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
@@ -101,7 +125,7 @@ ul {
   text-align: center;
   font-size: 25px;
   letter-spacing: 1px;
-  color: #deb555;
+  color: #daa520;
 }
 #header #skill-bar {
   display: flex;
@@ -123,7 +147,7 @@ ul {
 #works .work-item {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #deb555;
+  border: 1px solid #daa520;
 }
 #works li {
   padding: 3px 0;

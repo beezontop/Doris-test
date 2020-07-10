@@ -93,7 +93,7 @@ body {
   opacity: 0;
 }
 #pop-up-item-content iframe {
-  border: 1px solid #deb555;
+  border: 1px solid #daa520;
 }
 #pop-up-item-content .btn-close {
   position: absolute;
@@ -104,7 +104,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #deb555;
+  color: #daa520;
   text-decoration: none;
 }
 * {
@@ -217,42 +217,42 @@ body {
 }
 @keyframes shine1 {
   25% {
-    border-right: 10px solid #deb555;
-    border-bottom: 10px solid #deb555;
+    border-right: 10px solid #daa520;
+    border-bottom: 10px solid #daa520;
   }
   60% {
-    border-right: 10px solid rgba(222, 181, 85, 0.2);
-    border-bottom: 10px solid rgba(222, 181, 85, 0.2);
+    border-right: 10px solid rgba(218, 165, 32, 0.2);
+    border-bottom: 10px solid rgba(218, 165, 32, 0.2);
   }
 }
 @keyframes shine2 {
   45% {
-    border-right: 10px solid #deb555;
-    border-bottom: 10px solid #deb555;
+    border-right: 10px solid #daa520;
+    border-bottom: 10px solid #daa520;
   }
   80% {
-    border-right: 10px solid rgba(222, 181, 85, 0.2);
-    border-bottom: 10px solid rgba(222, 181, 85, 0.2);
+    border-right: 10px solid rgba(218, 165, 32, 0.2);
+    border-bottom: 10px solid rgba(218, 165, 32, 0.2);
   }
 }
 @keyframes shine3 {
   60% {
-    border-right: 10px solid #deb555;
-    border-bottom: 10px solid #deb555;
+    border-right: 10px solid #daa520;
+    border-bottom: 10px solid #daa520;
   }
   100% {
-    border-right: 10px solid rgba(222, 181, 85, 0.2);
-    border-bottom: 10px solid rgba(222, 181, 85, 0.2);
+    border-right: 10px solid rgba(218, 165, 32, 0.2);
+    border-bottom: 10px solid rgba(218, 165, 32, 0.2);
   }
 }
 @keyframes shine4 {
   80% {
-    border-right: 10px solid #deb555;
-    border-bottom: 10px solid #deb555;
+    border-right: 10px solid #daa520;
+    border-bottom: 10px solid #daa520;
   }
   100% {
-    border-right: 10px solid rgba(222, 181, 85, 0.2);
-    border-bottom: 10px solid rgba(222, 181, 85, 0.2);
+    border-right: 10px solid rgba(218, 165, 32, 0.2);
+    border-bottom: 10px solid rgba(218, 165, 32, 0.2);
   }
 }
 .triangle {
@@ -260,8 +260,8 @@ body {
   width: 0px;
   height: 0px;
   border-top: 10px solid transparent;
-  border-right: 10px solid rgba(222, 181, 85, 0.2);
-  border-bottom: 10px solid rgba(222, 181, 85, 0.2);
+  border-right: 10px solid rgba(218, 165, 32, 0.2);
+  border-bottom: 10px solid rgba(218, 165, 32, 0.2);
   border-left: 10px solid transparent;
 }
 #center-decor-square {
@@ -312,15 +312,15 @@ body {
 #center-decor-rectangle #right-bottom {
   width: 50%;
   height: 100px;
-  border-top: 1px solid #deb555;
-  border-bottom: 1px solid #deb555;
+  border-top: 1px solid #daa520;
+  border-bottom: 1px solid #daa520;
 }
 #center-decor-rectangle #right-top,
 #center-decor-rectangle #left-bottom {
   width: 125px;
   height: 50%;
-  border-right: 1px solid #deb555;
-  border-left: 1px solid #deb555;
+  border-right: 1px solid #daa520;
+  border-left: 1px solid #daa520;
 }
 #center-decor-rectangle #left-top {
   bottom: 50%;
@@ -359,12 +359,12 @@ body {
   line-height: 100px;
   font-family: 'Unna', serif;
   background-color: #000;
-  border: 1px solid #deb555;
+  border: 1px solid #daa520;
 }
 #entry a {
   display: block;
   text-decoration: none;
-  color: #deb555;
+  color: #daa520;
 }
 #d,
 #o,
@@ -389,30 +389,6 @@ body {
   bottom: 0;
   z-index: 999;
   opacity: 0;
-  /* #pop-up-item-content {
-        position        : absolute;
-        width           : 90%;
-        height          : 90%;
-        top             : 50%;
-        left            : 50%;
-        transform       : translate(-50%, -50%);
-        opacity: 0;
-        iframe{
-            border          : 1px solid @color-golden;
-        }
-        .btn-close{
-            position: absolute;
-            padding: 5px 10px;
-            right: 0px;
-            top: 3px;
-            font-size: 9px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: @color-golden;
-            text-decoration: none;
-        }
-    } */
 }
 #pop-up #cover-bg {
   position: absolute;
@@ -440,7 +416,7 @@ body {
 }
 #pop-up #pop-up-menu .row .border {
   height: 100%;
-  border-bottom: 1px #deb555 solid;
+  border-bottom: 1px #daa520 solid;
 }
 #pop-up #pop-up-menu a.pop-up-item {
   display: block;
@@ -449,7 +425,7 @@ body {
   text-align: center;
   line-height: 200%;
   text-transform: uppercase;
-  color: #deb555;
+  color: #daa520;
   font-family: 'Six Caps', sans-serif;
   font-size: 35px;
   letter-spacing: 1px;
