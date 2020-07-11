@@ -67,7 +67,7 @@ $(document).ready(function () {
         // url
         let url = data.results[v].url;
         let moreAreaTag=$(`<div class="more">`);
-        let moreATag = $(`<a href="#">&#62;&#62;more...</a>`);
+        let moreATag = $(`<a class="more-slide" href="#">&#62;&#62;more...</a>`);
 
       
         // description
@@ -95,7 +95,7 @@ $(document).ready(function () {
     }
   });
 
-  $('body').on('click','.more a',function(e){
+  $('body').on('click','.more-slide',function(e){
     let target=$(this).siblings('.more-area');
     $(target).slideToggle();
     e.preventDefault();

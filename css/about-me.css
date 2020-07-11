@@ -18,8 +18,7 @@ body {
   max-width: 767px;
 }
 .container > div,
-.container header,
-.container .skills {
+.container header {
   padding-top: 20px;
 }
 header {
@@ -30,6 +29,9 @@ header {
   text-align: center;
   line-height: 1.6em;
   letter-spacing: 1px;
+}
+.skills {
+  padding: 40px 0;
 }
 .skills .title {
   padding: 5px 0;
@@ -53,6 +55,10 @@ header {
 }
 .skills .row {
   margin: 0;
+}
+.skills .row > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .skills .skill-category {
   padding: 10px 0;
@@ -115,8 +121,11 @@ header {
   opacity: 1;
 }
 footer {
+  position: absolute;
   margin-top: 50px;
   padding: 10px;
+  bottom: 0;
+  width: 100%;
   background-color: goldenrod;
 }
 footer a {
@@ -126,13 +135,3 @@ footer a {
   text-align: center;
   letter-spacing: 1px;
 }
-/* @media(min-width:768px) {
-
-    .portfolio-iframe {
-        .more {
-            top   : 25%;
-            height: 73%;
-        }
-    }
-}
- */
