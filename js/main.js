@@ -54,6 +54,7 @@ $('document').ready(function(){
         let height=$(window).height()+"px";
         $('#new-container').css({"width":"100%","height":height});
 
+
         $('a#btn').click(function(e){
             $('#pop-up').addClass('d-block').animate({"opacity":"1"},600);
             $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').addClass('d-none');

@@ -1,5 +1,6 @@
 @import "public.css";
 body {
+  position: relative;
   color: goldenrod;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -32,6 +33,7 @@ header {
 }
 .skills {
   padding: 40px 0;
+  margin-bottom: 40px;
 }
 .skills .title {
   padding: 5px 0;
@@ -121,8 +123,7 @@ header {
   opacity: 1;
 }
 footer {
-  position: absolute;
-  margin-top: 50px;
+  position: fixed;
   padding: 10px;
   bottom: 0;
   width: 100%;
