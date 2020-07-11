@@ -5,8 +5,6 @@ $(document).ready(function () {
     dataType: 'json',
     success: function (data) {
 
-
-
       for (let v in data.results) {
 
 
@@ -64,22 +62,44 @@ $(document).ready(function () {
 
         };
 
+        $(liTag).append(SkillListTag);
+
         // url
         let url = data.results[v].url;
-        let moreTag = $(`<div class="more"><a href="${url}">&#62;&#62;more...</div>`);
+        let moreAreaTag=$(`<div class="more">`);
+        let moreATag = $(`<a href="#">&#62;&#62;more...</a>`);
 
-        $(liTag).append(SkillListTag);
-        $(workInfo).append(imgTag).append(nameTag).append(liTag).append(moreTag);
+      
+        // description
+        let moreHiddenArea=$(`<div class="more-area d-none">`);
+        let postUrl=work.relatedPostUrl;
+        let relatedPostTag=$(`<p class="related-post"><a href="${postUrl}" target="_blank"> &#62;&#62;View related posts in my blog </a></p>`);
+        let des=$(`
+        <p class="title">about the project</p>
+        <p class="description">${work.description}</p>
+        `);
+
+        $(moreHiddenArea).append(des);
+
+        if (postUrl!=""){
+          $(moreHiddenArea).append(relatedPostTag);
+        }
+        $(moreAreaTag).append(moreATag).append(moreHiddenArea);
+
+        $(workInfo).append(imgTag).append(nameTag).append(liTag).append(moreAreaTag);
         // append these HTML tags to HTML
         $('#works').append(workInfo);
-
-
 
       };
 
     }
   });
 
+  $('body').on('click','.more a',function(e){
+    let target=$(this).siblings('.more-area');
+    $(target).slideToggle();
+    e.preventDefault();
+  });
 
 });
 
