@@ -4,13 +4,13 @@ $('document').ready(function(){
     //to portfolio.html
     $('body').on("click","#btn-portfolio,#aboutme-more",function(e){
        $('#pop-up-item-content,#iframe-portfolio').addClass('d-block').animate({"opacity":"1"},400);
-        e.target.preventDefault();
+        e.preventDefault();
     });
 
     //to about-me.html
     $('body').on("click","#btn-aboutme",function(e){
         $('#pop-up-item-content,#iframe-aboutme').addClass('d-block').animate({"opacity":"1"},400);
-         e.target.preventDefault();
+         e.preventDefault();
      });
 
     //close pop-up-menu by clicking cover-bg
@@ -22,10 +22,11 @@ $('document').ready(function(){
     })
 
     //close pop-up-menu by clicking btn
-    $('.btn-close').click(function(){
+    $('.btn-close').click(function(e){
         $('#pop-up-item-content').animate({"opacity":"0"},400,function(){
             $('#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
+        e.preventDefault();
     })
 
     
@@ -47,19 +48,9 @@ $('document').ready(function(){
             
         });
     });
-
-    /* $('#new-container').mouseleave(function(e){
-
-
-        $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').stop().removeClass('d-none');
-        $('#left-top').animate({"left": "0"},500);
-        $('#right-top').animate({"top": "0"},500);
-        $('#right-bottom').animate({"right": "0"},500);
-        $('#left-bottom').animate({"top": "50%"},500);
-    }); */
     
     function windowSize() {
-        // let width=$(window).width()+"px";
+
         let height=$(window).height()+"px";
         $('#new-container').css({"width":"100%","height":height});
 
@@ -70,11 +61,7 @@ $('document').ready(function(){
             $('#pop-up .pop-up-item').css({"line-height":popUpItemHeight});
             e.preventDefault();
         });
-        
-        /* if($(window).width()>768){
-            $('.main-bg-l-1').
-        }
- */
+
     };
     $(window).resize(function() {
         windowSize();

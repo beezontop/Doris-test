@@ -109,6 +109,7 @@ body {
 }
 * {
   overflow: hidden;
+  font-family: 'Unna', serif;
 }
 .row {
   margin: 0 -5%;
@@ -366,6 +367,13 @@ body {
   text-decoration: none;
   color: #daa520;
 }
+.my-title {
+  padding-top: 20px;
+  font-size: 17px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #daa520;
+}
 #d,
 #o,
 #r,
@@ -448,15 +456,4 @@ body {
 #pop-up #bg-pop-up #bg-box-1 {
   width: 10%;
   background-color: rgba(222, 181, 85);
-}
-#pop-up #welcome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background-color: black;
-  border: 1px solid goldenrod;
-  color: #fff;
 }
