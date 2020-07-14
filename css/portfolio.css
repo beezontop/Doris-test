@@ -1,3 +1,4 @@
+@import "responsive.css";
 * {
   margin: 0;
   box-sizing: border-box;
@@ -20,6 +21,12 @@ body {
 }
 .color-white {
   color: white;
+}
+.color-light-gold {
+  color: #fcd062;
+}
+.bold {
+  font-weight: bold;
 }
 .underline {
   text-decoration: underline;
@@ -109,10 +116,15 @@ body {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
+  color: #daa520;
+  letter-spacing: 1px;
 }
 ul {
   padding: 0;
   list-style: none;
+}
+img {
+  border: 1px solid rgba(218, 165, 32, 0.2);
 }
 .container {
   margin: 0 auto;
@@ -120,37 +132,26 @@ ul {
   max-width: 767px;
 }
 #header #title {
-  padding: 20px 0;
+  padding: 40px 0;
   text-transform: uppercase;
   text-align: center;
   font-size: 25px;
   letter-spacing: 1px;
   color: #daa520;
 }
-#header #skill-bar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#header #skill-bar a {
-  padding: 0 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #fff;
-}
 #works {
-  padding-top: 20px;
-  color: #fff;
+  /*     .name{
+        text-transform: uppercase;
+    } */
 }
 #works .work-item {
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
+  padding-top: 0;
   border: 1px solid #daa520;
 }
 #works li {
-  padding: 3px 0;
+  padding: 20px 0;
 }
 #works li img {
   width: 100%;
@@ -169,12 +170,22 @@ ul {
 #works span:last-child:after {
   content: "";
 }
+#works .name-info {
+  margin: 0 -20px;
+  padding: 5px 0;
+  text-align: center;
+  letter-spacing: 1px;
+  background: goldenrod;
+  color: white;
+}
 #works .title {
   padding-right: 3px;
   letter-spacing: 1px;
 }
-#works .name {
-  text-transform: uppercase;
+#works .skill-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 #works .skill-list li {
   display: inline-block;
@@ -190,7 +201,9 @@ ul {
   height: auto;
   text-align: right;
   text-transform: uppercase;
-  color: #fff;
+  color: #daa520;
+  font-weight: bold;
+  text-shadow: rgba(218, 165, 32, 0.2);
 }
 #works .more-area .title {
   display: block;
@@ -202,7 +215,7 @@ ul {
   /* border-top: 1px solid; */
   border-bottom: 1px solid;
 }
-#works .more-area .description {
+#works .more-area .workAbout {
   padding: 20px;
   line-height: 1.8;
   text-align: center;

@@ -1,14 +1,21 @@
 @import "public.less";
+@import "responsive.css";
 
 body{
     // background-color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
+    color:@color-golden;
+    letter-spacing: 1px;
 }
 
 ul{
     padding:0;
     list-style: none;
+}
+
+img{
+    border:1px solid @color-trans-golden;
 }
 
 .container{
@@ -18,46 +25,27 @@ ul{
 }
 
 
-
 #header{
-
     #title{
-        padding:20px 0;
+        padding:40px 0;
         text-transform: uppercase;
         text-align: center;
         font-size: 25px;
         letter-spacing: 1px;
         color:@color-golden;
     }
-    
-    #skill-bar{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        a{
-            padding:0 5px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color:#fff;
-        }
-
-    }
-    
 }
 
 #works{
-    padding-top:20px;
-    color:#fff;
     .work-item{
         margin-bottom:20px;
-        padding:10px;
+        padding:20px;
+        padding-top:0;
         border:1px solid @color-golden;
 
     }
     li{
-        padding:3px 0;
+        padding:20px 0;
         img{
             width:100%;
             height:auto;
@@ -76,14 +64,25 @@ ul{
             content:"";
         }
     }
+    .name-info{
+        margin:0 -20px;
+        padding: 5px 0;
+        text-align: center;
+        letter-spacing: 1px;
+        background: goldenrod;
+        color: white;
+    }
     .title{
         padding-right:3px;
         letter-spacing: 1px;
     }
-    .name{
+/*     .name{
         text-transform: uppercase;
-    }
+    } */
     .skill-list{
+        display: flex;
+        justify-content: center;
+        padding-bottom:20px;
         li{
             display: inline-block;
             padding:0 5px;
@@ -98,7 +97,9 @@ ul{
             height: auto;
             text-align: right;
             text-transform: uppercase;
-            color: #fff;
+            color:@color-golden;
+            font-weight: bold;
+            text-shadow: @color-trans-golden;
         }
     }
     .more-area{
@@ -112,7 +113,7 @@ ul{
             /* border-top: 1px solid; */
             border-bottom: 1px solid;
         }
-        .description{
+        .workAbout{
             padding:20px;
             line-height: 1.8;
             text-align: center;

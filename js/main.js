@@ -60,7 +60,7 @@ $('document').ready(function () {
     $('.square-right-bottom').addClass('transparent').addClass('square-right-bottom-rotate');
     $('.square-left-bottom').addClass('transparent').addClass('square-left-bottom-rotate');
 
-    setTimeout(() => {
+    setTimeout(function(){
         $('#center-decor-square').addClass('d-none');
         $('#entry').addClass('show').addClass('border-gold');
         $('.entry-bg-c1,.entry-bg-c2').addClass('show');

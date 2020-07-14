@@ -1,4 +1,117 @@
-@import "public.css";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+.row:after,
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.d-none,
+.sm-d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.color-white {
+  color: white;
+}
+.color-light-gold {
+  color: #fcd062;
+}
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.rounded-border {
+  margin: 4px;
+  border: 1px solid rgba(222, 181, 85, 0.2);
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.tag-bg-html {
+  background-color: #e44d26;
+}
+.tag-bg-css {
+  background-color: #4cae4f;
+}
+.tag-bg-less {
+  background-color: #8ae48d;
+}
+.tag-bg-js {
+  background-color: #fdc910;
+}
+.tag-bg-jquery {
+  background-color: #1b75bb;
+}
+.tag-bg-ajax {
+  background-color: #a30000;
+}
+.tag-bg-json {
+  background-color: #ffaf37;
+}
+.tag-bg-react {
+  background-color: #61dafb;
+}
+.tag-bg-rwd {
+  background-color: #036600;
+}
+.tag-bg-bts {
+  background-color: #b386eb;
+}
+.tag-bg-cdp {
+  background-color: #485064;
+}
+.tag-bg-gth {
+  background-color: #79838d;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8d6b14;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#pop-up-item-content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+#pop-up-item-content iframe {
+  border: 1px solid #daa520;
+}
+#pop-up-item-content .btn-close {
+  position: absolute;
+  padding: 5px 10px;
+  right: 0px;
+  top: 3px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #daa520;
+  text-decoration: none;
+}
 body {
   position: relative;
   color: goldenrod;
@@ -30,6 +143,11 @@ header {
   text-align: center;
   line-height: 1.6em;
   letter-spacing: 1px;
+}
+.intro .point {
+  display: inline-block;
+  padding-top: 20px;
+  border-bottom: 3px dotted #daa520;
 }
 .skills {
   padding: 40px 0;

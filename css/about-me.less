@@ -1,4 +1,4 @@
-@import "public.css";
+@import "public.less";
 
 body {
     position: relative;
@@ -32,11 +32,19 @@ header {
     letter-spacing: 1px;
 }
 
+
+
 .intro {
     padding       : 20px 0;
     text-align    : center;
     line-height   : 1.6em;
     letter-spacing: 1px;
+    .point{
+        display: inline-block;
+        padding-top: 20px;
+        border-bottom: 3px dotted @color-golden;
+        // text-decoration: underline dotted @color-golden;
+    }
 }
 
 .skills {

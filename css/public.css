@@ -21,6 +21,12 @@ body {
 .color-white {
   color: white;
 }
+.color-light-gold {
+  color: #fcd062;
+}
+.bold {
+  font-weight: bold;
+}
 .underline {
   text-decoration: underline;
 }

@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "name": "My personal homepage - Doris",
+      "name": "My Personal Homepage",
       "skills": [
         "AJAX",
         "JSON",
@@ -11,7 +11,7 @@
         "CSS",
         "RWD"
       ],
-      "url": "https://beezontop.github.io/Doris-test/",
+      "url": "https://beezontop.github.io/Doris/",
       "image": "src/myhomepage.jpg",
       "description":"This website is my own website. It includes my information and portfolios. Thank you for viewing my website !",
       "relatedPostUrl":""
@@ -31,7 +31,7 @@
       "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415373"
     },
     {
-      "name": "multiple users",
+      "name": "Multiple Users",
       "skills": [
         "AJAX",
         "JavaScript",
