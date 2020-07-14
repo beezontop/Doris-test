@@ -85,6 +85,7 @@
     transition      : 1s;
     opacity         : 0;
     transition-delay: .8s;
+
     img {
         width : 100%;
         height: auto;
@@ -163,6 +164,7 @@
     height   : 40px;
     transform: translate(-20px, -20px);
     z-index  : 999;
+
     .square-left-top,
     .square-right-top,
     .square-right-bottom,
@@ -286,22 +288,32 @@
 // ==========================================entry
 
 #entry {
-    position        : absolute;
-    margin          : 0 auto;
-    padding         : 5% 10%;
-    top             : 50%;
-    left            : 50%;
-    transform       : translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, .3);
-    border          : 1px transparent solid;
-    transition      : 1s;
-    opacity         : 0;
+    position           : absolute;
+    margin             : 0 auto;
+    // padding         : 5% 10%;
+    top                : 50%;
+    left               : 50%;
+    // width              : 240px;
+    // height             : 150px;
+    width              : 240px;
+    height             : 150px;
+    transform          : translate(-50%, -50%);
+    background-color   : rgba(0, 0, 0, .3);
+    border             : 1px transparent solid;
+    transition         : 1s;
+    opacity            : 0;
 
+    #entry-wrap{
+        position: relative;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
     #entry-content {
-        margin          : 0px;
+        margin          : 20px auto 0px;
+
         width           : 200px;
         height          : 100px;
-        z-index         : 777;
         text-align      : center;
         font-size       : 40px;
         line-height     : 100px;
@@ -309,12 +321,20 @@
         background-color: #000;
         border          : 1px solid @color-golden;
     }
-}
 
-#entry-btn {
-    display        : block;
-    text-decoration: none;
-    color          : @color-golden;
+    #entry-btn {
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-decoration: none;
+        
+    }
+
+    a{
+        color          : @color-golden;
+    }
 }
 
 

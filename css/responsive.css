@@ -15,6 +15,10 @@
     max-width: 400px;
     max-height: 400px;
   }
+  body #new-container #entry {
+    width: 400px;
+    height: 280px;
+  }
   body #new-container #pop-up #pop-up-menu {
     width: 50%;
   }
@@ -38,6 +42,10 @@
   body #new-container .main-bg-l-1 {
     max-width: 700px;
     max-height: 700px;
+  }
+  body #new-container #entry {
+    width: 500px;
+    height: 280px;
   }
   body #new-container #pop-up #pop-up-menu {
     width: 40%;
