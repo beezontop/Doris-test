@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "name": "My homepage - Doris",
+      "name": "My personal homepage - Doris",
       "skills": [
         "AJAX",
         "JSON",
@@ -12,12 +12,12 @@
         "RWD"
       ],
       "url": "https://beezontop.github.io/Doris-test/",
-      "image": "json/myhomepage.jpg",
+      "image": "src/myhomepage.jpg",
       "description":"This website is my own website. It includes my information and portfolios. Thank you for viewing my website !",
       "relatedPostUrl":""
     },
     {
-      "name": "Asus Practice",
+      "name": "HTML/CSS Practice",
       "skills": [
         "JavaScript",
         "Jquery",
@@ -26,7 +26,7 @@
         "RWD"
       ],
       "url": "https://beezontop.github.io/Asus-practice/",
-      "image": "json/ASUS_practice.jpg",
+      "image": "src/ASUS_practice.jpg",
       "description":"This practice is based on the website of Asus (Taiwan-based multinational computer and phone hardware and electronics company). Improving my HTML, CSS, and JavaScript skills. Much more details of the process and the problems I dealt with are in my blog. ",
       "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415373"
     },
@@ -40,49 +40,9 @@
         "CSS"
       ],
       "url": "https://codepen.io/beezontop/pen/jOWYOOw",
-      "image": "json/AJAX_Multiple_users.jpg",
+      "image": "src/AJAX_Multiple_users.jpg",
       "description":"Getting data from an API , and displaying it in HTML. To make the data much easier to read, I used CSS and JS to hide part of information until the users open it.",
       "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415682"
-    },
-    {
-      "name": "timer",
-      "skills": [
-        "React",
-        "JavaScript",
-        "Jquery",
-        "HTML",
-        "CSS"
-      ],
-      "url": "https://codepen.io/beezontop/pen/MWKENvw",
-      "image": "json/React_timer.jpg",
-      "description":"Trying using React to make a simple timer (or you can also call it a counter) that the value increased by 1 every second. ",
-      "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415805"
-    },
-    {
-      "name": "counter",
-      "skills": [
-        "React",
-        "JavaScript",
-        "Jquery",
-        "HTML",
-        "CSS"
-      ],
-      "url": "https://codepen.io/beezontop/pen/mdVqbGy",
-      "image": "json/01.jpg",
-      "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415805"
-    },
-    {
-      "name": "to-do list",
-      "skills": [
-        "JavaScript",
-        "Jquery",
-        "HTML",
-        "CSS"
-      ],
-      "url": "https://codepen.io/beezontop/pen/ExPaxMR?editors=1010",
-      "image": "json/To-do-List.jpg",
-      "description":"This to-do list is built by using Javascript. Try adding something to the list ! :)",
-      "relatedPostUrl":""
     }
   ]
 }

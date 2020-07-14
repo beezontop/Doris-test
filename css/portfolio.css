@@ -209,7 +209,7 @@ ul {
 }
 #works .more-area p.related-post {
   display: block;
-  padding: 20px 0;
+  padding-bottom: 20px;
   text-align: center;
   letter-spacing: 1px;
 }

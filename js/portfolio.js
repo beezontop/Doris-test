@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   $.ajax({
-    url: 'json/codepen-portfolio.json',
+    url: 'src/codepen-portfolio.json',
     dataType: 'json',
     success: function (data) {
 

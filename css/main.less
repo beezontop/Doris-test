@@ -2,7 +2,7 @@
 @import "responsive.css";
 
 * {
-    overflow  : hidden;
+    overflow   : hidden;
     font-family: 'Unna', serif;
 }
 
@@ -18,71 +18,23 @@
 
 // sm手機 : ~767 md平板 : 768-1199 lg電腦 : 1200~
 
-
 #new-container {
     position : relative;
     max-width: 767px;
     overflow : hidden;
 
-    &:hover {
-
-        // ==========================================centre-square
-        .square-left-top {
-            transform: rotate(180deg);
-        }
-
-        .square-right-top {
-            transform: rotate(-90deg);
-        }
-
-        .square-right-bottom {
-            transform: rotate(360deg);
-        }
-
-        .square-left-bottom {
-            transform: rotate(90deg);
-        }
-
-        .square-left-top,
-        .square-right-top,
-        .square-right-bottom,
-        .square-left-bottom {
-            opacity: 0;
-        }
-
-        // ==========================================entry
-        #entry {
-            border-color: rgba(222, 181, 85, .3);
-            opacity     : 1;
-            z-index     : 10;
-
-            #entry-content {
-                z-index: 500;
-            }
-        }
-
-        #d,
-        #o,
-        #r,
-        #i,
-        #s {
-            top    : 0;
-            opacity: 1;
-        }
-
-        .entry-bg-c1,
-        .entry-bg-c2 {
-            transition-delay: .8s;
-            opacity         : 1;
-            z-index         : 1;
-        }
-
-        .entry-bg-c2 {
-            transition-delay: 1.8s;
-            opacity         : 1;
-        }
-
+    .transparent {
+        opacity: 0;
     }
+
+    .show {
+        opacity: 1;
+    }
+
+    .border-gold {
+        border: 1px solid rgba(218, 165, 32, .5);
+    }
+
 }
 
 // ==========================================main-background
@@ -124,19 +76,23 @@
 // ==========================================entry-background
 .entry-bg-c1,
 .entry-bg-c2 {
-    position  : absolute;
-    top       : 50%;
-    left      : 50%;
-    transform : translate(-50%, -50%);
-    max-width : 300px;
-    max-height: 300px;
-    transition: 1s;
-    opacity   : 0;
-
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    max-width       : 300px;
+    max-height      : 300px;
+    transition      : 1s;
+    opacity         : 0;
+    transition-delay: .8s;
     img {
         width : 100%;
         height: auto;
     }
+}
+
+.entry-bg-c2 {
+    transition-delay: 1.8s;
 }
 
 // ==========================================cover-decorations-square
@@ -207,12 +163,13 @@
     height   : 40px;
     transform: translate(-20px, -20px);
     z-index  : 999;
-
     .square-left-top,
     .square-right-top,
     .square-right-bottom,
     .square-left-bottom {
-        transition               : .5s;
+        transition-property      : all;
+        transition-duration      : 1s;
+        transition-delay         : 1.3s;
         animation-duration       : 3s;
         animation-iteration-count: infinite;
     }
@@ -239,6 +196,22 @@
         top           : 20px;
         animation-name: shine4;
     }
+
+    .square-left-top-rotate {
+        transform: rotate(180deg);
+    }
+
+    .square-right-top-rotate {
+        transform: rotate(-90deg);
+    }
+
+    .square-right-bottom-rotate {
+        transform: rotate(360deg);
+    }
+
+    .square-left-bottom-rotate {
+        transform: rotate(90deg);
+    }
 }
 
 // ==========================================cover-decorations-rectangles
@@ -252,6 +225,8 @@
         position        : absolute;
         background-color: black;
         z-index         : 888;
+        transition      : 3s;
+        transition-delay: 1.3s;
     }
 
     #left-top,
@@ -268,10 +243,15 @@
         height      : 50%;
         border-right: 1px solid @color-golden;
         border-left : 1px solid @color-golden;
+
     }
 
     #left-top {
         bottom: 50%;
+    }
+
+    .move-left {
+        transform: translateX(-900px);
     }
 
     #right-top {
@@ -279,14 +259,26 @@
         bottom: 50%;
     }
 
+    .move-top {
+        transform: translateY(-900px);
+    }
+
     #right-bottom {
         top  : 50%;
         right: 0;
     }
 
+    .move-right {
+        transform: translateX(900px);
+    }
+
     #left-bottom {
         top  : 50%;
         right: 50%;
+    }
+
+    .move-bottom {
+        transform: translateY(900px);
     }
 
 }
@@ -317,37 +309,36 @@
         background-color: #000;
         border          : 1px solid @color-golden;
     }
-
-    a {
-        display        : block;
-        text-decoration: none;
-        color          : @color-golden;
-    }
 }
 
-.my-title{
-    padding-top: 20px;
-    font-size: 17px;
+#entry-btn {
+    display        : block;
+    text-decoration: none;
+    color          : @color-golden;
+}
+
+
+.my-title {
+    padding-top   : 20px;
+    font-size     : 17px;
     letter-spacing: 3px;
-    text-align: center;
-    color:@color-golden;
+    text-align    : center;
+    color         : @color-golden;
+    transition    : 2s;
 }
 
-#d,
-#o,
-#r,
-#i,
-#s {
+.text {
     position  : relative;
-    display   : inline;
-    top       : -10px;
-    transition: 1s;
-    opacity   : 0;
+    display   : inline-block;
+    transition: 2s;
 }
 
-#o,
-#i {
-    top: 20px;
+.up {
+    transform: translateY(-10px);
+}
+
+.down {
+    transform: translateY(20px);
 }
 
 // ==========================================pop-up-menu
