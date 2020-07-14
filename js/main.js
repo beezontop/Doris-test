@@ -61,11 +61,10 @@ $('document').ready(function () {
     $('.square-left-bottom').addClass('transparent').addClass('square-left-bottom-rotate');
 
     setTimeout(() => {
-        $('.square-left-top,.square-right-top,.square-right-bottom,.square-left-bottom').addClass('d-none');
+        $('#center-decor-square').addClass('d-none');
         $('#entry').addClass('show').addClass('border-gold');
         $('.entry-bg-c1,.entry-bg-c2').addClass('show');
         $('.text').removeClass('up').removeClass('down');
-    
     }, 2000);
 
   
@@ -93,7 +92,7 @@ $('document').ready(function () {
         $('#new-container').css({ "width": "100%", "height": height });
 
 
-        $('a#btn').click(function (e) {
+        $('a#entry-btn').click(function (e) {
             $('#pop-up').addClass('d-block').animate({ "opacity": "1" }, 600);
             $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').addClass('d-none');
             let popUpItemHeight = $('.pop-up-item').height() + "px";
