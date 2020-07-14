@@ -22,6 +22,12 @@ body {
 .color-white {
   color: white;
 }
+.color-light-gold {
+  color: #fcd062;
+}
+.bold {
+  font-weight: bold;
+}
 .underline {
   text-decoration: underline;
 }
@@ -377,7 +383,7 @@ body {
   color: #daa520;
 }
 .my-title {
-  padding-top: 20px;
+  padding-top: 5px;
   font-size: 17px;
   letter-spacing: 3px;
   text-align: center;

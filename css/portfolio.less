@@ -83,6 +83,7 @@ img{
         display: flex;
         justify-content: center;
         padding-bottom:20px;
+        flex-wrap: wrap;
         li{
             display: inline-block;
             padding:0 5px;
@@ -90,17 +91,23 @@ img{
     }
     .more{
         margin-top:5px;
+        a.more-slide{
+            font-size: 14px;
+        }
         a{
             display: inline-block;
             text-decoration: none;
             width: 100%;
             height: auto;
             text-align: right;
+            font-family: 'Unna', serif;
+            font-size: 16px;
             text-transform: uppercase;
             color:@color-golden;
             font-weight: bold;
             text-shadow: @color-trans-golden;
         }
+        
     }
     .more-area{
         .title{

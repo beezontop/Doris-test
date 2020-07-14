@@ -19,6 +19,9 @@
     width: 400px;
     height: 280px;
   }
+  body #new-container .my-title {
+    padding-top: 20px;
+  }
   body #new-container #pop-up #pop-up-menu {
     width: 50%;
   }
@@ -27,6 +30,10 @@
   }
   #works li.name-info {
     font-size: 1.2em;
+  }
+  .intro p.point {
+    text-decoration: none;
+    border-bottom: 3px dotted goldenrod;
   }
 }
 @media (min-width: 1200px) {

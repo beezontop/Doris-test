@@ -186,6 +186,7 @@ img {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 #works .skill-list li {
   display: inline-block;
@@ -194,12 +195,17 @@ img {
 #works .more {
   margin-top: 5px;
 }
+#works .more a.more-slide {
+  font-size: 14px;
+}
 #works .more a {
   display: inline-block;
   text-decoration: none;
   width: 100%;
   height: auto;
   text-align: right;
+  font-family: 'Unna', serif;
+  font-size: 16px;
   text-transform: uppercase;
   color: #daa520;
   font-weight: bold;
