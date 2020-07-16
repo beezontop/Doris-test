@@ -1,5 +1,6 @@
 $('document').ready(function () {
 
+    // get html from about-me.html
     $.ajax({
         url: 'about-me.html',
         dataType: 'html',
@@ -8,6 +9,7 @@ $('document').ready(function () {
         }
     });
 
+    // get html from about-me.html
     $.ajax({
         url: 'portfolio.html',
         dataType: 'html',
@@ -20,30 +22,29 @@ $('document').ready(function () {
     //pop-up-menu
     //to about-me.html
     $('body').on("click", "#btn-aboutme", function (e) {
-        $('#pop-up-item-content,#iframe-aboutme').addClass('d-block').animate({ "opacity": "1" }, 400);
+        $('.pop-up-item-content,#iframe-aboutme').addClass('d-block').animate({ "opacity": "1" }, 400);
         e.preventDefault();
     });
 
-
     //to portfolio.html
     $('body').on("click", "#btn-portfolio,#aboutme-more", function (e) {
-        $('#pop-up-item-content,#iframe-portfolio').addClass('d-block').animate({ "opacity": "1" }, 400);
+        $('.pop-up-item-content,#iframe-portfolio').addClass('d-block').animate({ "opacity": "1" }, 400);
         e.preventDefault();
     });
 
 
     //close pop-up-menu by clicking cover-bg
     $('#cover-bg').click(function () {
-        $('#pop-up,#pop-up-item-content').animate({ "opacity": "0" }, 400, function () {
-            $('#pop-up,#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
+        $('#pop-up,.pop-up-item-content').animate({ "opacity": "0" }, 400, function () {
+            $('#pop-up,.pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
 
     })
 
     //close pop-up-menu by clicking btn
     $('.btn-close').click(function (e) {
-        $('#pop-up-item-content').animate({ "opacity": "0" }, 400, function () {
-            $('#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
+        $('.pop-up-item-content').animate({ "opacity": "0" }, 400, function () {
+            $('.pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
         e.preventDefault();
     });
@@ -81,7 +82,7 @@ $('document').ready(function () {
             $('#pop-up').addClass('d-block').animate({ "opacity": "1" }, 600);
             $('#left-top,#right-top,#right-bottom,#left-bottom,#center-decor-square').addClass('d-none');
             let popUpItemHeight = $('.pop-up-item').height() + "px";
-            $('#pop-up .pop-up-item').css({ "line-height": popUpItemHeight });
+            // $('#pop-up .pop-up-item').css({ "line-height": popUpItemHeight });
             e.preventDefault();
         });
 

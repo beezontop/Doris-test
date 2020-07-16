@@ -1,11 +1,11 @@
 @import "public.less";
 
-.aboutme-container {
+#aboutme-container {
     position   : relative;
     margin     : 0 auto;
-    padding    : 0 15px;
-    overflow   : hidden;
+    padding    : 0 5%;
     max-width  : 767px;
+    overflow   : hidden;
     color      : goldenrod;
     font-family: 'Source Sans Pro', sans-serif;
 
@@ -25,39 +25,21 @@
         letter-spacing: 1px;
 
         .point {
-            display         : inline-block;
-            padding-top     : 20px;
-            // border-bottom: 3px dotted @color-golden;
-            text-decoration : underline dotted @color-golden;
+            display        : inline-block;
+            padding-top    : 20px;
+            text-decoration: underline dotted @color-golden;
         }
     }
 
     .skills {
-        padding      : 40px 0;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
 
         .title {
             padding         : 5px 0;
             text-align      : center;
+            letter-spacing  : 1px;
             color           : black;
             background-color: goldenrod;
-            letter-spacing  : 1px;
-        }
-
-        ul {
-            display        : flex;
-            justify-content: center;
-            flex-wrap      : wrap;
-            margin-bottom  : 15px;
-            padding        : 0;
-            list-style     : none;
-
-            li {
-                padding       : 2px 4px;
-                letter-spacing: 1px;
-                color         : #fff;
-            }
-
         }
 
         .row {
@@ -66,6 +48,8 @@
             &>div {
                 padding-top   : 10px;
                 padding-bottom: 10px;
+                border        : 1px goldenrod solid;
+                text-transform: uppercase;
             }
         }
 
@@ -77,10 +61,19 @@
             letter-spacing: 2px;
         }
 
-        .languages,
-        .tools {
-            border        : 1px goldenrod solid;
-            text-transform: uppercase;
+        ul {
+            display        : flex;
+            margin-bottom  : 15px;
+            justify-content: center;
+            flex-wrap      : wrap;
+
+            li {
+                padding       : 2px 4px;
+                letter-spacing: 1px;
+                color         : #fff;
+                font-size     : 13px;
+            }
+
         }
 
         .tools {
@@ -92,70 +85,20 @@
         }
     }
 
-    .portfolio-iframe {
-        position  : relative;
-        margin-top: 30px;
-        border    : 1px solid goldenrod;
-
-        iframe {
-            width : 100%;
-            height: 67vh;
-        }
-
-        a {
-            display: block;
-            width  : 100%;
-            height : 100%;
-            color  : goldenrod;
-        }
-
-        #aboutme-more {
-            position        : absolute;
-            width           : 100%;
-            height          : 100%;
-            top             : 0;
-            background-color: goldenrod;
-            transition      : .3s;
-            opacity         : 0;
-
-            p {
-                display         : inline-block;
-                position        : absolute;
-                top             : 50%;
-                left            : 50%;
-                transform       : translate(-50%, -50%);
-                font-size       : 25px;
-                letter-spacing  : 1px;
-                width           : 95px;
-                height          : 95px;
-                line-height     : 95px;
-                text-align      : center;
-                background-color: white;
-                border-radius   : 50%;
-            }
-        }
-
-        &:hover {
-            #aboutme-more {
-                opacity: 1;
-            }
-        }
-    }
-
     .footer-contact {
         position        : fixed;
         padding         : 10px;
-        left: 0;
+        left            : 0;
         bottom          : 0;
         width           : 100%;
         background-color: goldenrod;
 
-        & a {
+        a {
             display        : block;
-            color          : white;
-            text-decoration: none;
             text-align     : center;
             letter-spacing : 1px;
+            text-decoration: none;
+            color          : white;
         }
     }
 

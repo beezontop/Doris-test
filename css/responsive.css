@@ -22,10 +22,10 @@
   body #new-container .my-title {
     padding-top: 20px;
   }
-  body #new-container #pop-up #pop-up-menu {
+  body #new-container #pop-up .pop-up-menu {
     width: 50%;
   }
-  body #new-container #pop-up #pop-up-menu a.pop-up-item {
+  body #new-container #pop-up .pop-up-menu a {
     font-size: 45px;
   }
   #works li.name-info {
@@ -57,7 +57,13 @@
     width: 500px;
     height: 280px;
   }
-  body #new-container #pop-up #pop-up-menu {
+  body #new-container #pop-up .pop-up-menu {
     width: 40%;
+  }
+  body #new-container #iframe-aboutme {
+    overflow: hidden;
+  }
+  #aboutme-container .skills {
+    padding-top: 20px;
   }
 }

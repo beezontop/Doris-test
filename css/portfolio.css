@@ -1,4 +1,7 @@
-@import "responsive.css";
+ul {
+  padding: 0;
+  list-style: none;
+}
 .row {
   margin: 0 -15px;
 }
@@ -92,41 +95,25 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/* body{
-    // background-color: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    color:@color-golden;
-    letter-spacing: 1px;
-} */
 .portfolio-container {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 767px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
-  color: #daa520;
   letter-spacing: 1px;
-}
-.portfolio-container ul {
-  padding: 0;
-  list-style: none;
+  color: #daa520;
 }
 .portfolio-container img {
   border: 1px solid rgba(218, 165, 32, 0.2);
 }
-.portfolio-container #header #title {
+.portfolio-container header #title {
   padding: 40px 0;
   text-transform: uppercase;
   text-align: center;
   font-size: 25px;
   letter-spacing: 1px;
   color: #daa520;
-}
-.portfolio-container #works {
-  /*     .name{
-        text-transform: uppercase;
-    } */
 }
 .portfolio-container #works .work-item {
   margin-bottom: 20px;
@@ -144,16 +131,6 @@
 .portfolio-container #works p {
   display: inline-block;
 }
-.portfolio-container #works span {
-  display: inline-block;
-}
-.portfolio-container #works span:after {
-  padding: 0 5px;
-  content: "/";
-}
-.portfolio-container #works span:last-child:after {
-  content: "";
-}
 .portfolio-container #works .name-info {
   margin: 0 -20px;
   padding: 5px 0;
@@ -161,10 +138,7 @@
   letter-spacing: 1px;
   background: goldenrod;
   color: white;
-}
-.portfolio-container #works .title {
-  padding-right: 3px;
-  letter-spacing: 1px;
+  font-family: 'Unna', serif;
 }
 .portfolio-container #works .skill-list {
   display: flex;
@@ -175,12 +149,10 @@
 .portfolio-container #works .skill-list li {
   display: inline-block;
   padding: 0 5px;
+  font-size: 12px;
 }
 .portfolio-container #works .more {
   margin-top: 5px;
-}
-.portfolio-container #works .more a.more-slide {
-  font-size: 14px;
 }
 .portfolio-container #works .more a {
   display: inline-block;
@@ -195,6 +167,9 @@
   font-weight: bold;
   text-shadow: rgba(218, 165, 32, 0.2);
 }
+.portfolio-container #works .more a.more-slide {
+  font-size: 14px;
+}
 .portfolio-container #works .more-area .title {
   display: block;
   padding: 20px 0;
@@ -202,7 +177,6 @@
   text-align: center;
   color: goldenrod;
   font-size: 16px;
-  /* border-top : 1px solid; */
   border-bottom: 1px solid;
 }
 .portfolio-container #works .more-area .workAbout {

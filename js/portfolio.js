@@ -17,36 +17,35 @@ $(document).ready(function () {
         let workName = $(`<li class="name-info"><p class="name">${work.name} </p></li>`);
 
         // skill
-        let liTag = $(`<li></li>`);
         let workSkill = $(`<ul class="skill-list clearfix"></ul>`);
 
         for (let skill of work.skills) {
 
-          let spanTag = "";
+          let skillTag = "";
           switch (skill) {
             case 'HTML':
-              spanTag = $(`<li class="rounded-border tag-bg-html color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-html color-white">${skill}</li>`);
               break;
             case 'CSS':
-              spanTag = $(`<li class="rounded-border tag-bg-css color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-css color-white">${skill}</li>`);
               break;
             case 'JavaScript':
-              spanTag = $(`<li class="rounded-border tag-bg-js color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-js color-white">${skill}</li>`);
               break;
             case 'Jquery':
-              spanTag = $(`<li class="rounded-border tag-bg-jquery color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-jquery color-white">${skill}</li>`);
               break;
             case 'AJAX':
-              spanTag = $(`<li class="rounded-border tag-bg-ajax color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-ajax color-white">${skill}</li>`);
               break;
             case 'JSON':
-              spanTag = $(`<li class="rounded-border tag-bg-json color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-json color-white">${skill}</li>`);
               break;
             case 'React':
-              spanTag = $(`<li class="rounded-border tag-bg-react color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border tag-bg-react color-white">${skill}</li>`);
               break;
             case 'RWD':
-              spanTag = $(`<li class="rounded-border  tag-bg-rwd color-white">${skill}</li>`);
+              skillTag = $(`<li class="rounded-border  tag-bg-rwd color-white">${skill}</li>`);
               break;
 
             default:
@@ -54,7 +53,7 @@ $(document).ready(function () {
 
           }
 
-          $(workSkill).append(spanTag);
+          $(workSkill).append(skillTag);
         };
 
         //more

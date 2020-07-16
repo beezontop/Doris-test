@@ -1,14 +1,4 @@
 @import "public.less";
-@import "responsive.css";
-
-/* body{
-    // background-color: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    color:@color-golden;
-    letter-spacing: 1px;
-} */
-
 
 
 .portfolio-container {
@@ -17,19 +7,14 @@
     max-width     : 767px;
     font-family   : Verdana, Geneva, Tahoma, sans-serif;
     font-size     : 13px;
-    color         : @color-golden;
     letter-spacing: 1px;
-
-    ul {
-        padding   : 0;
-        list-style: none;
-    }
+    color         : @color-golden;
 
     img {
         border: 1px solid @color-trans-golden;
     }
 
-    #header {
+    header {
         #title {
             padding       : 40px 0;
             text-transform: uppercase;
@@ -46,7 +31,6 @@
             padding      : 20px;
             padding-top  : 0;
             border       : 1px solid @color-golden;
-
         }
 
         li {
@@ -62,18 +46,6 @@
             display: inline-block;
         }
 
-        span {
-            display: inline-block;
-
-            &:after {
-                padding: 0 5px;
-                content: "/";
-            }
-
-            &:last-child:after {
-                content: "";
-            }
-        }
 
         .name-info {
             margin        : 0 -20px;
@@ -82,16 +54,9 @@
             letter-spacing: 1px;
             background    : goldenrod;
             color         : white;
+            font-family     : 'Unna', serif;
         }
 
-        .title {
-            padding-right : 3px;
-            letter-spacing: 1px;
-        }
-
-        /*     .name{
-        text-transform: uppercase;
-    } */
         .skill-list {
             display        : flex;
             justify-content: center;
@@ -101,16 +66,12 @@
             li {
                 display: inline-block;
                 padding: 0 5px;
+                font-size: 12px;
             }
         }
 
         .more {
             margin-top: 5px;
-
-            a.more-slide {
-                font-size: 14px;
-            }
-
             a {
                 display        : inline-block;
                 text-decoration: none;
@@ -124,9 +85,13 @@
                 font-weight    : bold;
                 text-shadow    : @color-trans-golden;
             }
+            a.more-slide {
+                font-size: 14px;
+            }
 
         }
 
+        //the hidden area
         .more-area {
             .title {
                 display       : block;
@@ -135,7 +100,6 @@
                 text-align    : center;
                 color         : goldenrod;
                 font-size     : 16px;
-                /* border-top : 1px solid; */
                 border-bottom : 1px solid;
             }
 

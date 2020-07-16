@@ -373,17 +373,7 @@ body {
         background-color: rgba(0, 0, 0, .6);
     }
 
-    #pop-up-menu {
-        /* position        : absolute;
-        top             : 50%;
-        left            : 50%;
-        width           : 60%;
-        height          : 50%;
-        transform       : translate(-50%, -50%);
-        background-color: rgb(255, 255, 255);
-        border-radius   : 8px; */
-
-
+    .pop-up-menu {
         position        : absolute;
         top             : 50%;
         left            : 50%;
@@ -412,21 +402,21 @@ body {
             border-bottom: 1px @color-golden solid;
         }
 
-        a.pop-up-item {
+        a {
             display       : block;
             width         : 100%;
             height        : 100%;
             text-align    : center;
-            line-height   : 200%;
+            line-height   : 100px;
             text-transform: uppercase;
-            color         : @color-golden;
-            font-family   : 'Six Caps', sans-serif;
             font-size     : 35px;
             letter-spacing: 1px;
+            font-family   : 'Six Caps', sans-serif;
+            color         : @color-golden;
         }
     }
 
-    #bg-pop-up {
+    .bg-pop-up {
         position: absolute;
         width   : 100%;
         height  : 100%;
@@ -450,7 +440,7 @@ body {
     }
 }
 
-#pop-up-item-content {
+.pop-up-item-content {
     position : absolute;
     width    : 90%;
     height   : 90%;

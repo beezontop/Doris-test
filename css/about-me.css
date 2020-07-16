@@ -1,3 +1,7 @@
+ul {
+  padding: 0;
+  list-style: none;
+}
 .row {
   margin: 0 -15px;
 }
@@ -91,125 +95,78 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.aboutme-container {
+#aboutme-container {
   position: relative;
   margin: 0 auto;
-  padding: 0 15px;
-  overflow: hidden;
+  padding: 0 5%;
   max-width: 767px;
+  overflow: hidden;
   color: goldenrod;
   font-family: 'Source Sans Pro', sans-serif;
 }
-.aboutme-container > div,
-.aboutme-container header {
+#aboutme-container > div,
+#aboutme-container header {
   padding-top: 20px;
 }
-.aboutme-container header {
+#aboutme-container header {
   letter-spacing: 1px;
 }
-.aboutme-container .intro {
+#aboutme-container .intro {
   padding: 20px 0;
   text-align: center;
   line-height: 1.6em;
   letter-spacing: 1px;
 }
-.aboutme-container .intro .point {
+#aboutme-container .intro .point {
   display: inline-block;
   padding-top: 20px;
   text-decoration: underline dotted #daa520;
 }
-.aboutme-container .skills {
-  padding: 40px 0;
-  margin-bottom: 40px;
+#aboutme-container .skills {
+  margin-bottom: 60px;
 }
-.aboutme-container .skills .title {
+#aboutme-container .skills .title {
   padding: 5px 0;
   text-align: center;
+  letter-spacing: 1px;
   color: black;
   background-color: goldenrod;
-  letter-spacing: 1px;
 }
-.aboutme-container .skills ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-  padding: 0;
-  list-style: none;
-}
-.aboutme-container .skills ul li {
-  padding: 2px 4px;
-  letter-spacing: 1px;
-  color: #fff;
-}
-.aboutme-container .skills .row {
+#aboutme-container .skills .row {
   margin: 0;
 }
-.aboutme-container .skills .row > div {
+#aboutme-container .skills .row > div {
   padding-top: 10px;
   padding-bottom: 10px;
+  border: 1px goldenrod solid;
+  text-transform: uppercase;
 }
-.aboutme-container .skills .skill-category {
+#aboutme-container .skills .skill-category {
   padding: 10px 0;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
 }
-.aboutme-container .skills .languages,
-.aboutme-container .skills .tools {
-  border: 1px goldenrod solid;
-  text-transform: uppercase;
+#aboutme-container .skills ul {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.aboutme-container .skills .tools {
+#aboutme-container .skills ul li {
+  padding: 2px 4px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 13px;
+}
+#aboutme-container .skills .tools {
   margin-top: -1px;
 }
-.aboutme-container .skills .text-sm {
+#aboutme-container .skills .text-sm {
   font-size: 10px;
 }
-.aboutme-container .portfolio-iframe {
-  position: relative;
-  margin-top: 30px;
-  border: 1px solid goldenrod;
-}
-.aboutme-container .portfolio-iframe iframe {
-  width: 100%;
-  height: 67vh;
-}
-.aboutme-container .portfolio-iframe a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: goldenrod;
-}
-.aboutme-container .portfolio-iframe #aboutme-more {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-color: goldenrod;
-  transition: 0.3s;
-  opacity: 0;
-}
-.aboutme-container .portfolio-iframe #aboutme-more p {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  letter-spacing: 1px;
-  width: 95px;
-  height: 95px;
-  line-height: 95px;
-  text-align: center;
-  background-color: white;
-  border-radius: 50%;
-}
-.aboutme-container .portfolio-iframe:hover #aboutme-more {
-  opacity: 1;
-}
-.aboutme-container .footer-contact {
+#aboutme-container .footer-contact {
   position: fixed;
   padding: 10px;
   left: 0;
@@ -217,10 +174,10 @@
   width: 100%;
   background-color: goldenrod;
 }
-.aboutme-container .footer-contact a {
+#aboutme-container .footer-contact a {
   display: block;
-  color: white;
-  text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
 }
