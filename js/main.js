@@ -1,4 +1,5 @@
 $('document').ready(function () {
+
     $.ajax({
         url: 'about-me.html',
         dataType: 'html',
@@ -45,26 +46,8 @@ $('document').ready(function () {
             $('#pop-up-item-content,#iframe-portfolio,#iframe-aboutme').removeClass('d-block');
         });
         e.preventDefault();
-    })
+    });
 
-
-    //手機板(sm) + 平板(md) : #new-container:hover
-    //互動式
-    /* $('#new-container').mouseenter(function(e){
-
-        $('#left-top').delay(300).animate({"left": "-900px"},1000,function(e){
-            $('#left-top').addClass('d-none');
-        });
-        $('#right-top').delay(300).animate({"top": "-900px"},1000,function(e){
-            $('#right-top').addClass('d-none');
-        });
-        $('#right-bottom').delay(300).animate({"right": "-900px"},1000,function(e){
-            $('#right-bottom').addClass('d-none');
-        });
-        $('#left-bottom').delay(300).animate({"top": "900px"},1000,function(e){
-            $('#left-bottom,#center-decor-square').addClass('d-none');
-        });
-    }); */
     //動畫式
 
 
@@ -82,7 +65,7 @@ $('document').ready(function () {
         $('#center-decor-square').addClass('d-none');
         $('#entry').addClass('show').addClass('border-gold');
         $('.entry-bg-c1,.entry-bg-c2').addClass('show');
-        $('.text').removeClass('up').removeClass('down');
+        $('.letter').removeClass('up').removeClass('down');
     }, 2000);
 
 

@@ -96,8 +96,8 @@
 }
 * {
   margin: 0;
-  overflow: hidden;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body {
   background-color: #000;
@@ -105,7 +105,6 @@ body {
 #new-container {
   position: relative;
   max-width: 767px;
-  overflow: hidden;
 }
 #new-container .transparent {
   opacity: 0;
@@ -359,15 +358,16 @@ body {
 #entry a {
   color: #daa520;
 }
-.my-title {
+.job-title {
   padding-top: 5px;
   font-size: 17px;
   letter-spacing: 3px;
   text-align: center;
+  font-family: 'Unna', serif;
   color: #daa520;
   transition: 2s;
 }
-.text {
+.letter {
   position: relative;
   display: inline-block;
   transition: 2s;
@@ -396,23 +396,37 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 #pop-up #pop-up-menu {
+  /* position        : absolute;
+        top             : 50%;
+        left            : 50%;
+        width           : 60%;
+        height          : 50%;
+        transform       : translate(-50%, -50%);
+        background-color: rgb(255, 255, 255);
+        border-radius   : 8px; */
   position: absolute;
   top: 50%;
   left: 50%;
   width: 60%;
-  height: 50%;
+  height: auto;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   border-radius: 8px;
 }
-#pop-up #pop-up-menu .row {
+#pop-up #pop-up-menu .pop-up-menu-list {
+  display: flex;
+  width: 100%;
   height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-#pop-up #pop-up-menu .row > div {
-  height: 33.3333%;
+#pop-up #pop-up-menu .pop-up-menu-list > div {
+  width: 100%;
+  height: 100px;
 }
-#pop-up #pop-up-menu .row .border {
-  height: 100%;
+#pop-up #pop-up-menu .border {
   border-bottom: 1px #daa520 solid;
 }
 #pop-up #pop-up-menu a.pop-up-item {
