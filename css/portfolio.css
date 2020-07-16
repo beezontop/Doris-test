@@ -1,10 +1,12 @@
 @import "responsive.css";
-* {
-  margin: 0;
-  box-sizing: border-box;
+.row {
+  margin: 0 -15px;
 }
-body {
-  background-color: #000;
+.sm-col-12 {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
 }
 .row:after,
 .clearfix:after {
@@ -36,6 +38,7 @@ body {
   border: 1px solid rgba(222, 181, 85, 0.2);
   border-radius: 4px;
   text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .tag-bg-html {
   background-color: #e44d26;
@@ -89,49 +92,30 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-#pop-up-item-content {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-#pop-up-item-content iframe {
-  border: 1px solid #daa520;
-}
-#pop-up-item-content .btn-close {
-  position: absolute;
-  padding: 5px 10px;
-  right: 0px;
-  top: 3px;
-  font-size: 9px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #daa520;
-  text-decoration: none;
-}
-body {
+/* body{
+    // background-color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color:@color-golden;
+    letter-spacing: 1px;
+} */
+.portfolio-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 767px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
   color: #daa520;
   letter-spacing: 1px;
 }
-ul {
+.portfolio-container ul {
   padding: 0;
   list-style: none;
 }
-img {
+.portfolio-container img {
   border: 1px solid rgba(218, 165, 32, 0.2);
 }
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 767px;
-}
-#header #title {
+.portfolio-container #header #title {
   padding: 40px 0;
   text-transform: uppercase;
   text-align: center;
@@ -139,38 +123,38 @@ img {
   letter-spacing: 1px;
   color: #daa520;
 }
-#works {
+.portfolio-container #works {
   /*     .name{
         text-transform: uppercase;
     } */
 }
-#works .work-item {
+.portfolio-container #works .work-item {
   margin-bottom: 20px;
   padding: 20px;
   padding-top: 0;
   border: 1px solid #daa520;
 }
-#works li {
+.portfolio-container #works li {
   padding: 20px 0;
 }
-#works li img {
+.portfolio-container #works li img {
   width: 100%;
   height: auto;
 }
-#works p {
+.portfolio-container #works p {
   display: inline-block;
 }
-#works span {
+.portfolio-container #works span {
   display: inline-block;
 }
-#works span:after {
+.portfolio-container #works span:after {
   padding: 0 5px;
   content: "/";
 }
-#works span:last-child:after {
+.portfolio-container #works span:last-child:after {
   content: "";
 }
-#works .name-info {
+.portfolio-container #works .name-info {
   margin: 0 -20px;
   padding: 5px 0;
   text-align: center;
@@ -178,27 +162,27 @@ img {
   background: goldenrod;
   color: white;
 }
-#works .title {
+.portfolio-container #works .title {
   padding-right: 3px;
   letter-spacing: 1px;
 }
-#works .skill-list {
+.portfolio-container #works .skill-list {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
   flex-wrap: wrap;
 }
-#works .skill-list li {
+.portfolio-container #works .skill-list li {
   display: inline-block;
   padding: 0 5px;
 }
-#works .more {
+.portfolio-container #works .more {
   margin-top: 5px;
 }
-#works .more a.more-slide {
+.portfolio-container #works .more a.more-slide {
   font-size: 14px;
 }
-#works .more a {
+.portfolio-container #works .more a {
   display: inline-block;
   text-decoration: none;
   width: 100%;
@@ -211,28 +195,28 @@ img {
   font-weight: bold;
   text-shadow: rgba(218, 165, 32, 0.2);
 }
-#works .more-area .title {
+.portfolio-container #works .more-area .title {
   display: block;
   padding: 20px 0;
   text-transform: uppercase;
   text-align: center;
   color: goldenrod;
   font-size: 16px;
-  /* border-top: 1px solid; */
+  /* border-top : 1px solid; */
   border-bottom: 1px solid;
 }
-#works .more-area .workAbout {
+.portfolio-container #works .more-area .workAbout {
   padding: 20px;
   line-height: 1.8;
   text-align: center;
 }
-#works .more-area p.related-post {
+.portfolio-container #works .more-area p.related-post {
   display: block;
   padding-bottom: 20px;
   text-align: center;
   letter-spacing: 1px;
 }
-#works .more-area p.related-post a {
+.portfolio-container #works .more-area p.related-post a {
   text-align: center;
   color: #daa520;
 }

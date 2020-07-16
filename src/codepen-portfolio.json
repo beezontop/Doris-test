@@ -13,11 +13,11 @@
       ],
       "url": "https://beezontop.github.io/Doris/",
       "image": "src/myhomepage.jpg",
-      "description":"This website is my own website. It includes my information and portfolios. Thank you for viewing my website !",
+      "description":"This website is my personal website. It includes my information and portfolios. Thank you for viewing my website !",
       "relatedPostUrl":""
     },
     {
-      "name": "HTML/CSS Practice",
+      "name": "HTML/CSS/RWD Practice",
       "skills": [
         "JavaScript",
         "Jquery",

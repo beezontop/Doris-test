@@ -59,12 +59,12 @@ $(document).ready(function () {
 
         //more
         let more = $(`<div class="more">`);
-        let moreBtn = $(`<a class="more-slide" href="#">&#62;&#62;more</a>`);
+        let moreBtn = $(`<a class="more-slide" href="#">&gt;&gt;Read more</a>`);
         let moreHiddenArea = $(`<div class="more-area d-none">`);
         
         // related Posts
         let postUrl = work.relatedPostUrl;
-        let relatedPostTag = $(`<p class="related-post"><a href="${postUrl}" target="_blank"> &#62;&#62;View related posts in my blog </a></p>`);
+        let relatedPostTag = $(`<p class="related-post"><a href="${postUrl}" target="_blank"> &gt;&gt;View related posts in my blog </a></p>`);
         
         // about
         let workAbout = $(`
@@ -90,6 +90,12 @@ $(document).ready(function () {
 
   $('body').on('click', '.more-slide', function (e) {
     let target = $(this).siblings('.more-area');
+    // console.log($(this).html());
+    if($(this).html()=='&gt;&gt;Read more'){
+      $(this).html('&gt;&gt;Read less');
+    }else {
+      $(this).html('&gt;&gt;Read more');
+    }
     $(target).slideToggle();
     e.preventDefault();
   });

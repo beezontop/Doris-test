@@ -1,140 +1,163 @@
 @import "public.less";
 @import "responsive.css";
 
-body{
+/* body{
     // background-color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     color:@color-golden;
     letter-spacing: 1px;
-}
-
-ul{
-    padding:0;
-    list-style: none;
-}
-
-img{
-    border:1px solid @color-trans-golden;
-}
-
-.container{
-    margin:0 auto;
-    padding:0 20px;
-    max-width: 767px;
-}
+} */
 
 
-#header{
-    #title{
-        padding:40px 0;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 25px;
-        letter-spacing: 1px;
-        color:@color-golden;
+
+.portfolio-container {
+    margin        : 0 auto;
+    padding       : 0 20px;
+    max-width     : 767px;
+    font-family   : Verdana, Geneva, Tahoma, sans-serif;
+    font-size     : 13px;
+    color         : @color-golden;
+    letter-spacing: 1px;
+
+    ul {
+        padding   : 0;
+        list-style: none;
     }
-}
 
-#works{
-    .work-item{
-        margin-bottom:20px;
-        padding:20px;
-        padding-top:0;
-        border:1px solid @color-golden;
-
+    img {
+        border: 1px solid @color-trans-golden;
     }
-    li{
-        padding:20px 0;
-        img{
-            width:100%;
-            height:auto;
+
+    #header {
+        #title {
+            padding       : 40px 0;
+            text-transform: uppercase;
+            text-align    : center;
+            font-size     : 25px;
+            letter-spacing: 1px;
+            color         : @color-golden;
         }
     }
-    p{
-        display: inline-block;
-    }
-    span{
-        display: inline-block;
-        &:after{
-            padding:0 5px;
-            content:"/";
+
+    #works {
+        .work-item {
+            margin-bottom: 20px;
+            padding      : 20px;
+            padding-top  : 0;
+            border       : 1px solid @color-golden;
+
         }
-        &:last-child:after{
-            content:"";
+
+        li {
+            padding: 20px 0;
+
+            img {
+                width : 100%;
+                height: auto;
+            }
         }
-    }
-    .name-info{
-        margin:0 -20px;
-        padding: 5px 0;
-        text-align: center;
-        letter-spacing: 1px;
-        background: goldenrod;
-        color: white;
-    }
-    .title{
-        padding-right:3px;
-        letter-spacing: 1px;
-    }
-/*     .name{
+
+        p {
+            display: inline-block;
+        }
+
+        span {
+            display: inline-block;
+
+            &:after {
+                padding: 0 5px;
+                content: "/";
+            }
+
+            &:last-child:after {
+                content: "";
+            }
+        }
+
+        .name-info {
+            margin        : 0 -20px;
+            padding       : 5px 0;
+            text-align    : center;
+            letter-spacing: 1px;
+            background    : goldenrod;
+            color         : white;
+        }
+
+        .title {
+            padding-right : 3px;
+            letter-spacing: 1px;
+        }
+
+        /*     .name{
         text-transform: uppercase;
     } */
-    .skill-list{
-        display: flex;
-        justify-content: center;
-        padding-bottom:20px;
-        flex-wrap: wrap;
-        li{
-            display: inline-block;
-            padding:0 5px;
+        .skill-list {
+            display        : flex;
+            justify-content: center;
+            padding-bottom : 20px;
+            flex-wrap      : wrap;
+
+            li {
+                display: inline-block;
+                padding: 0 5px;
+            }
         }
-    }
-    .more{
-        margin-top:5px;
-        a.more-slide{
-            font-size: 14px;
+
+        .more {
+            margin-top: 5px;
+
+            a.more-slide {
+                font-size: 14px;
+            }
+
+            a {
+                display        : inline-block;
+                text-decoration: none;
+                width          : 100%;
+                height         : auto;
+                text-align     : right;
+                font-family    : 'Unna', serif;
+                font-size      : 16px;
+                text-transform : uppercase;
+                color          : @color-golden;
+                font-weight    : bold;
+                text-shadow    : @color-trans-golden;
+            }
+
         }
-        a{
-            display: inline-block;
-            text-decoration: none;
-            width: 100%;
-            height: auto;
-            text-align: right;
-            font-family: 'Unna', serif;
-            font-size: 16px;
-            text-transform: uppercase;
-            color:@color-golden;
-            font-weight: bold;
-            text-shadow: @color-trans-golden;
-        }
-        
-    }
-    .more-area{
-        .title{
-            display: block;
-            padding: 20px 0;
-            text-transform: uppercase;
-            text-align: center;
-            color: goldenrod;
-            font-size: 16px;
-            /* border-top: 1px solid; */
-            border-bottom: 1px solid;
-        }
-        .workAbout{
-            padding:20px;
-            line-height: 1.8;
-            text-align: center;
-        }
-        p.related-post{
-            display: block;
-            padding-bottom:20px;
-            text-align: center;
-            letter-spacing: 1px;
-            a{
-                text-align: center;
-                color:@color-golden;
+
+        .more-area {
+            .title {
+                display       : block;
+                padding       : 20px 0;
+                text-transform: uppercase;
+                text-align    : center;
+                color         : goldenrod;
+                font-size     : 16px;
+                /* border-top : 1px solid; */
+                border-bottom : 1px solid;
+            }
+
+            .workAbout {
+                padding    : 20px;
+                line-height: 1.8;
+                text-align : center;
+            }
+
+            p.related-post {
+                display       : block;
+                padding-bottom: 20px;
+                text-align    : center;
+                letter-spacing: 1px;
+
+                a {
+                    text-align: center;
+                    color     : @color-golden;
+                }
             }
         }
     }
-}
 
+
+}

@@ -31,7 +31,7 @@
   #works li.name-info {
     font-size: 1.2em;
   }
-  .intro p.point {
+  .aboutme-container .intro p.point {
     text-decoration: none;
     border-bottom: 3px dotted goldenrod;
   }

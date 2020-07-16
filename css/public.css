@@ -1,9 +1,11 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+.row {
+  margin: 0 -15px;
 }
-body {
-  background-color: #000;
+.sm-col-12 {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
 }
 .row:after,
 .clearfix:after {
@@ -35,6 +37,7 @@ body {
   border: 1px solid rgba(222, 181, 85, 0.2);
   border-radius: 4px;
   text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .tag-bg-html {
   background-color: #e44d26;
@@ -87,28 +90,4 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-#pop-up-item-content {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-#pop-up-item-content iframe {
-  border: 1px solid #daa520;
-}
-#pop-up-item-content .btn-close {
-  position: absolute;
-  padding: 5px 10px;
-  right: 0px;
-  top: 3px;
-  font-size: 9px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #daa520;
-  text-decoration: none;
 }
