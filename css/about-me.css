@@ -125,21 +125,18 @@ ul {
 #aboutme-container .skills {
   margin-bottom: 60px;
 }
+#aboutme-container .skills > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px goldenrod solid;
+  text-transform: uppercase;
+}
 #aboutme-container .skills .title {
   padding: 5px 0;
   text-align: center;
   letter-spacing: 1px;
   color: black;
   background-color: goldenrod;
-}
-#aboutme-container .skills .row {
-  margin: 0;
-}
-#aboutme-container .skills .row > div {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px goldenrod solid;
-  text-transform: uppercase;
 }
 #aboutme-container .skills .skill-category {
   padding: 10px 0;

@@ -13,7 +13,7 @@ $(document).ready(function () {
         let workItem = $(`<ul class="work-item">`);
         let workurl = data.results[v].url;
         let imgUrl = work.image;
-        let workImg = $(`<li><a href="${workurl}" target="_blank" ><img src="${imgUrl}" /></a></li>`);
+        let workImg = $(`<li><a href="${workurl}" target="_blank" ><img src="${imgUrl}" alt="workimg"/></a></li>`);
         let workName = $(`<li class="name-info"><p class="name">${work.name} </p></li>`);
 
         // skill
