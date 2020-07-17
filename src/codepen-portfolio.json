@@ -27,7 +27,7 @@
       ],
       "url": "https://beezontop.github.io/Asus-practice/",
       "image": "src/ASUS_practice.jpg",
-      "description":"This practice is based on the website of Asus (Taiwan-based multinational computer and phone hardware and electronics company). Improving my HTML, CSS, and JavaScript skills. Much more details of the process and the problems I dealt with are in my blog. ",
+      "description":"This practice is based on the website of Asus (Taiwan-based multinational computer and phone hardware and electronics company). Improve my HTML, CSS, and JavaScript skills. Much more details of the process and the problems I dealt with are in my blog. ",
       "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415373"
     },
     {
@@ -41,7 +41,7 @@
       ],
       "url": "https://codepen.io/beezontop/pen/jOWYOOw",
       "image": "src/AJAX_Multiple_users.jpg",
-      "description":"Getting data from an API , and displaying it in HTML. To make the data much easier to read, I used CSS and JS to hide part of information until the users open it.",
+      "description":"Get data from an API , and display it in HTML. To make the data much easier to read, I used CSS and JS to hide part of information until the user open it.",
       "relatedPostUrl":"https://d1882002.pixnet.net/blog/category/1415682"
     }
   ]
