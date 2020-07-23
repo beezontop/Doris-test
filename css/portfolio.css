@@ -181,6 +181,7 @@ ul {
 }
 .portfolio-container #works .more-area .workAbout {
   padding: 20px;
+  width: 100%;
   line-height: 1.8;
   text-align: center;
 }

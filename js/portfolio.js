@@ -63,7 +63,12 @@ $(document).ready(function () {
         
         // related Posts
         let postUrl = work.relatedPostUrl;
-        let relatedPostTag = $(`<p class="related-post"><a href="${postUrl}" target="_blank"> &gt;&gt;View related posts in my blog </a></p>`);
+        let relatedPostTag = $(`<p class="related-post"><a href="${postUrl}" target="_blank"> &gt;&gt;View related posts in <u>my blog</u> </a></p>`);
+
+        
+        let githubUrl = work.githubUrl;
+        let gitHubLink = $(`<p class="related-post"><a href="${githubUrl}" target="_blank"> &gt;&gt;View the codes in <u>gitHub</u> </a></p>`);
+    
         
         // about
         let workAbout = $(`
@@ -76,6 +81,11 @@ $(document).ready(function () {
         if (postUrl != "") {
           $(moreHiddenArea).append(relatedPostTag);
         }
+
+        if (work.githubUrl != "") {
+        $(moreHiddenArea).append(gitHubLink);
+       }
+
         $(more).append(moreBtn).append(moreHiddenArea);
 
         $(workItem).append(workName).append(workImg).append(more);
