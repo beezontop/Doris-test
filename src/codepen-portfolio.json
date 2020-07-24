@@ -14,6 +14,19 @@
       "relatedPostUrl":""
     },
     {
+      "name": "Member List ( React.js / API) ",
+      "skills": [
+        "React",
+        "JavaScript",
+        "CSS"
+      ],
+      "url": "https://beezontop.github.io/react-random-user/",
+      "image": "src/React-member-list.jpg",
+      "description":"This member list is created by using React. <br/> Get data from API provided by https://randomuser.me/ <br/> Use components from react-bootstrap",
+      "githubUrl":"https://github.com/beezontop/react-random-user",
+      "relatedPostUrl":""
+    },
+    {
       "name": "My Personal Homepage",
       "skills": [
         "AJAX",
