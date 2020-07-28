@@ -90,7 +90,11 @@ $(document).ready(function () {
 
         $(workItem).append(workName).append(workImg).append(more);
         // append these HTML tags to HTML
-        $('#works').append(workItem);
+        $('body').on('click', '#btn-portfolio', function (e) {
+          $('#works').append(workItem);
+          e.preventDefault();
+        });
+        
 
       };
 
@@ -108,6 +112,8 @@ $(document).ready(function () {
     $(target).slideToggle();
     e.preventDefault();
   });
+
+  
 
 });
 
