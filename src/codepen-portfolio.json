@@ -1,6 +1,19 @@
 {
   "results": [
     {
+      "name": "MomDaily ( React.js ) ",
+      "skills": [
+        "React",
+        "JavaScript",
+        "CSS"
+      ],
+      "url": "https://beezontop.github.io/react-news/",
+      "image": "src/MomDaily.jpg",
+      "description":"此為參考 PopDaily 所做的練習網站，分別有首頁、聯絡我、登入等頁面<br/>*串接 The New York Times 的 API 以取得文章內容<br/>*使用 Material UI 以及 React Bootstrap 提供的 components (Carousel/Dropdowns...等)<br/>*使用 Fontello / Material Design 的 icons <br/>*Responsive Web Design",
+      "githubUrl":"https://github.com/beezontop/react-news",
+      "relatedPostUrl":""
+    },
+    {
       "name": "E Shopping Mall ( React.js ) ",
       "skills": [
         "React",
@@ -9,7 +22,7 @@
       ],
       "url": "https://beezontop.github.io/react-shopping/",
       "image": "src/react-shoppingmall.jpg",
-      "description":"This E-Shpping mall is created by using React.",
+      "description":"此為簡易電子商務網站練習，將商品加入購物車之後，可點擊購物車選擇商品數量並查看金額<br/>*串接自己透過 My JSON Server 於 github 建立的 json API，以取得商品內容<br/>使用　React Bootstrap 提供的 components<br/>*使用 Bootstrap 的 icons <br/>*Responsive Web Design",
       "githubUrl":"https://github.com/beezontop/react-shopping",
       "relatedPostUrl":""
     },
@@ -22,7 +35,7 @@
       ],
       "url": "https://beezontop.github.io/React-TodoList/",
       "image": "src/To-do-List.jpg",
-      "description":"This To-do List is created by using React.",
+      "description":"利用 react.js 做成的 To-do List<br/>包含 create / read / update / delete 四種基本功能",
       "githubUrl":"https://github.com/beezontop/React-TodoList",
       "relatedPostUrl":""
     },

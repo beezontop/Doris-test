@@ -1,6 +1,10 @@
 @import "responsive.css";
 @import "portfolio.css";
 @import "about-me.css";
+ul {
+  padding: 0;
+  list-style: none;
+}
 .row {
   margin: 0 -15px;
 }
@@ -77,6 +81,12 @@
 }
 .tag-bg-gth {
   background-color: #79838d;
+}
+.tag-bg-mtui {
+  background-color: #1976d2;
+}
+.tag-bg-mtd {
+  background-color: #212121;
 }
 /* width */
 ::-webkit-scrollbar {
