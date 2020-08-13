@@ -33,7 +33,7 @@
         "JavaScript",
         "CSS"
       ],
-      "url": "https://beezontop.github.io/React-TodoList/",
+      "url": "https://beezontop.github.io/my-todo-list/",
       "image": "src/To-do-List.jpg",
       "description":"利用 react.js 做成的 To-do List<br/>包含 create / read / update / delete 四種基本功能",
       "githubUrl":"https://github.com/beezontop/React-TodoList",
